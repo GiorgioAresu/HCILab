@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - Progetti</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                     // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            $(document).ready(function(){
+            	var tmp = $('.catTitle').css("width");
+            	cssLoaded = (tmp === "155px");
+            	
+            	if (cssLoaded) {
+            //Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            	$(".catList li").hover(function () {
+            		$(this).stop().animate({paddingLeft: 40}, 'fast');
+            	}, function () {
+            		$(this).stop().animate({paddingLeft: 20}, 'fast');
+            	});
+            };
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent" id="attivita">
+                    <h1>Progetti</h1>
+                    <div class="pageCol1">
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_1.html"><img src="images/progetti/evac.jpg" alt="progetto1" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_1.html">Applicazioni 3D su Dispositivi Mobili</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_3.html"><img src="images/progetti/vexcms.jpg" alt="progetto3" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_3.html">Beni Culturali e Musei Virtuali</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_5.html"><img src="images/progetti/VCR-workspace.jpg" alt="progetto5" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_5.html">CSCW per la Sperimentazione Scientifica</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_7.html"><img src="images/progetti/garment.jpg" alt="progetto7" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_7.html">Esseri Umani Virtuali</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_9.html"><img src="images/progetti/image1 (2).jpg" alt="progetto9" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_9.html">Information Visualization in Database Temporali e Clinici</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_11.html"><img src="images/progetti/slec-website.jpg" alt="progetto11" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_11.html">Interazione Uomo-Macchina per le Disabilità</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_13.html"><img src="images/progetti/image2.jpg" alt="progetto13" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_13.html">Navigazione e Usabilità degli Ambienti Virtuali 3D</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_15.html"><img src="images/progetti/image1 (3).jpg" alt="preogetto15" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_15.html">Tecniche di Input su Dispositivi Mobili</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pageCol2">
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_2.html"><img src="images/progetti/anelli.jpg" alt="progetto2" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_2.html">Applicazioni per la Salute, il Fitness e lo Sport</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_4.html"><img src="images/progetti/image1.jpg" alt="progetto4" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_4.html">Controllo di Telecamere in Grafica 3D</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_6.html"><img src="images/progetti/image3.jpg" alt="progetto6" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_6.html">E-Commerce 3D</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_8.html"><img src="images/progetti/image1 (4).jpg" alt="progetto8" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_8.html">Guide Turistiche Mobili Location-aware</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_10.html"><img src="images/progetti/emerg1.jpg" alt="progetto10" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_10.html">Interazione Uomo-Macchina nelle Emergenze</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_12.html"><img src="images/progetti/image1 (1).jpg" alt="progetto12" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_12.html">Interfacce Adattive</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_14.html"><img src="images/progetti/nurses.jpg" alt="progetto14" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_14.html">Serious Games, Formazione e Addestramento</a>
+                            </div>
+                        </div>
+                        <div class="itemBlock">
+                            <div>
+                                <a href="progetti/progetto_16.html"><img src="images/progetti/magda.jpg" alt="progetto16" class="itemImg" /></a>
+                            </div>
+                            <div class="itemTitle twoRows">
+                                <a href="progetti/progetto_16.html">Visualizzazione delle Informazioni su Dispositivi Mobili</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Università degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

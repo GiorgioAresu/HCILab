@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - Home</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                      // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            	$(document).ready(function(){
+            		var tmp = $('.catTitle').css("width");
+            		cssLoaded = (tmp === "155px");
+            		
+            	if (cssLoaded) {
+            	//Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            	$(".catList li").hover(function () {
+            		$(this).stop().animate({paddingLeft: 40}, 'fast');
+            	}, function () {
+            		$(this).stop().animate({paddingLeft: 20}, 'fast');
+            	});
+            	};
+            });
+        </script>
+        <link type="text/css" href="css/jquery.slider.css" rel="stylesheet" />
+        <link type="text/css" href="css/custom.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent">
+                    <div class="custom-wrap2" id="default">
+                        <div id="slider1" class="slider">
+                            <div class="slider-box">
+                                <img src="img/1/1.jpg" alt="" class="slider-item" />
+                                <img src="img/1/2.jpg" alt="" class="slider-item" />
+                                <img src="img/1/3.jpg" alt="" class="slider-item" />
+                                <img src="img/1/4.jpg" alt="" class="slider-item" />
+                            </div>
+                            <div class="slider-nav">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                            <a href="#" class="slider-arrow slider-prev"></a>
+                            <a href="#" class="slider-arrow slider-next"></a>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+                    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+                    <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
+                    <script type="text/javascript" src="js/jquery.slider.min.js"></script>
+                    <script type="text/javascript">
+                        $(function () {
+                        var cssLoaded = false;
+                        var tmp = $('.catTitle').css("width");
+                        cssLoaded = (tmp === "155px");
+                        if (cssLoaded) {
+                        	$("#slider1").slider({
+                        		speed: 350,
+                        		width: 300,
+                        		height: 200,
+                        		autoPlay: true
+                        	});
+                        }});
+                    </script>
+                    <p>Dal 1998 opera, presso il Dipartimento di Matematica e Informatica, il laboratorio di Interazione Uomo-Macchina (HCI Lab), dedicato all'ideazione e sperimentazione di nuovi modi di interagire con strumenti tecnologici. Guide turistiche mobili, siti Web 3D e simulazioni in 3D, applicazioni mobili per il fitness e in medicina: questi sono alcuni esempi dei campi nei quali il laboratorio e' attivamente impegnato. Il riconoscimento dell’importanza dell’HCI Lab e' testimoniato non solo dalle numerose pubblicazioni scientifiche, ma anche dal ruolo organizzativo sulla scena internazionale: nel 2003, il laboratorio ha organizzato il congresso mondiale sui dispositivi e servizi mobili, con la sponsorship di aziende quali Nokia, Philips e Microsoft. Nel 2004 e 2005, il Direttore del laboratorio e' stato co-chairman del congresso internazionale (ACM Web3D) sulle tecnologie Web 3D, mentre nel 2007 e' co-chairman di quello su dispositivi e servizi mobili (Mobile HCI). Le attivita' del laboratorio sono inoltre finanziate sia da enti pubblici (europei e nazionali), sia da imprese private. Grazie a queste esperienze, HCI Lab ha acquisito delle competenze uniche in Italia, che offre ad aziende ed enti esterni che vogliano avvalersi delle piu' recenti innovazioni nel settore delle tecnologie Web 3D e delle tecnologie mobili.</p>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Università degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

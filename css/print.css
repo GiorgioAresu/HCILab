@@ -1,0 +1,162 @@
+html,body {background-color:#FFF; color:#000; font-size: 12pt;}
+img  {max-width: 100%;}
+h1,h2,h3,h4,h5,h6 {page-break-after: avoid;}
+ul, ol, li {page-break-inside: avoid;}
+table table,tr,td {page-break-before: avoid;page-break-after: avoid;}
+	
+p {
+	text-align:justify;
+	font-size:12pt;
+}
+h1 {
+	font-size:30px;
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:16px;
+}
+
+body {
+	width: 100%;
+	font-size: 12pt;
+}
+
+#contentContenitor {
+	width:100%;
+}
+
+#logo, #logoUni, .sidebar, .itemLinkSection, #footer, #w3c, .dicB {
+	display:none;
+}
+
+/* MEMBRI */
+.members {
+	margin:3px 3px 10px 3px;
+	width:160px;
+	height:180px;
+	float:left;
+}
+.mImg {
+	width:160px;
+	height:160px;
+	float:left;
+}
+.mNome {
+	height: 20px;
+	padding: 4px;
+	text-align: center;
+	margin-bottom: 10px;
+	clear: both;
+}
+
+/* SPONSORS */
+.sponsors {
+	margin:3px 3px 30px 3px;
+	width:180px;
+	height:180px;
+	float:left;
+}
+
+.sponsors .label {
+	text-align: center;
+	display: table-cell;
+	width: 180px;
+	vertical-align: middle;
+	height: 2em;
+}
+
+/* DICONO DI NOI */
+
+.dicContainer {
+	clear: both;
+}
+.dicLeft {
+	float: left;
+	height: 80px;
+	width: 20%;
+	margin-bottom: 10px;
+}
+.dicDate {
+	text-align: center;
+	margin-bottom: 2px;
+}
+.dicRight {
+	float: right;
+	width: 80%;
+	margin-bottom: 10px;
+}
+.dicTitle {
+	font-weight: 800;
+}
+.dicDesc {
+	font-size: 16px;
+}
+.dicLink {
+	font-size: 12px;
+}
+
+/* CORSI */
+
+.ulDisc ul {
+	list-style:disc;
+	padding-left:20px;
+	line-height:20px;
+}
+
+
+/* PROGETTI E VIDEO*/
+.pageCol1 {
+	float:left;
+	width:48%;
+}
+.pageCol2 {
+	float:right;
+	width:48%;
+}
+.itemBlock {
+	text-align:center;
+}
+.itemTitle {
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+.twoRows { height: 2em; }
+.threeRows { height: 3em; }
+.itemImg { height: 200px; }
+
+.videoimg {
+	height: 200px;
+}
+
+/** Pagine dei video **/
+.videoThumb {
+	float: right;
+	width: 250px;
+	margin: 0 0 20px 20px;
+}
+
+/* CONTATTACI */
+
+#wrapper { 
+	margin:30px auto;
+	width:500px;
+}
+input, textarea { 
+	padding: 8px;
+	width: 200px;
+}
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+}
+.form label { 
+	margin-left: 12px;
+}
+.submit input {
+	width: auto;
+	padding: 10px 14px;
+	font-size: 14px;
+}

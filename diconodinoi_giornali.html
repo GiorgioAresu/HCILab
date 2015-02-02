@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - Dicono di noi - giornali</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                      // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            	$(document).ready(function(){
+            		var tmp = $('.catTitle').css("width");
+            		cssLoaded = (tmp === "155px");
+            		
+            	if (cssLoaded) {
+            	//Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            	$(".catList li").hover(function () {
+            		$(this).stop().animate({paddingLeft: 40}, 'fast');
+            	}, function () {
+            		$(this).stop().animate({paddingLeft: 20}, 'fast');
+            	});
+            	};
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent" id="persone">
+                    <h1>Dicono di noi - Giornali</h1>
+                    <div class="dicB" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">
+                        Radio e TV
+                    </div>
+                    <div class="dicB" style="cursor: pointer;" onclick="location.href='diconodinoi_giornali.html';">
+                        Giornali
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">Mar 2011</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress46/focusContent.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/focus.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il mensile di salute Starbene intervista il direttore del nostro laboratorio</div>
+                            <div class="dicDesc">
+                                L'uso dei videogiochi per scopi seri di motivazione ed addestramento e' il tema a cui la rivista Focus, nel numero 221 di Marzo, ha dedicato un ampio servizio, parlando delle ricerche svolte dal nostro laboratorio sia nel settore delle emergenze che di quello dell'esercizio fisico.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress46/focusContent.jpg">[vedi alcuni frammenti del servizio]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">Apr 2010</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress45/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/starbene.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il mensile di salute Starbene intervista il direttore del nostro laboratorio</div>
+                            <div class="dicDesc">
+                                Il web ci rende piu' intelligenti? Quali strategie dobbiamo seguire per usare la rete in modo efficace e sano? Queste alcune delle domande rivolte a Luca Chittaro dalla popolare rivista del gruppo Mondadori, nel numero di Aprile 2010. 
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress45/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">Gen 2007</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress44/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/societe.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Anche Societe', mensile sul lusso, parla del progetto di Mobile Personal Trainer del nostro laboratorio</div>
+                            <div class="dicDesc">
+                                Un personal trainer da polso, si chiama Evita l'ultimo accessorio che manca ai telefoni cellulari. L'acronimo Evita sta per &quot;Emodied Virtual  Trainer&quot;, un'allenatrice tascabile in grado suggerire percorso e ritmo migliore, di monitorare il reale andamento dell'attivita' fisica, il grado di affaticamento e la concentrazione di ossigeno nel sangue.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress44/scansione.jpg">[vedi la scansione dell'articolo] </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">15 Feb 2007</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress43/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/sole24ore.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il laboratorio di Interazione Uomo-Macchina segnalato dal Sole 24 ore fra i cinque centri di eccellenza per il rapporto con le imprese</div>
+                            <div class="dicDesc">
+                                Imprese-atenei, le sinergie che funzionano. I centri di eccellenza si stanno aprendo sempre piu' al dialogo con le aziende, a costi contenuti.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress43/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">18 Dic 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress42/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/jack2.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il mensile tecnologico Jack parla del nostro progetto di Mobile Personal Trainer</div>
+                            <div class="dicDesc">
+                                Training col Palmare, il personal trainer? Lo metterai in tasca. Un team di ricercatori dell'Universita' di Udine ha sviluppato il prototipo Mopet, presentato all'ultima edizione della fiera Virtuality a Torino.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress42/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">15 Dic 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress41/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il nostro laboratorio realizza il Virtual Reality Theatre del centro di ricerca CirMont</div>
+                            <div class="dicDesc">
+                                I laboratori di ricerca CirMont inaugurati dal presidente Illy, ...il Virtual Reality Theatre (VRT) integra alla proiezione 3D un insieme di sensori che rilevano il movimento umano, permettendo agli spettatori di interagire con le visualizzazioni stereoscopiche mediante tecniche gestuali intuitive.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress41/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">30 Nov 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress40/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/vanity.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il progetto Mopet del nostro laboratorio sulla rubrica tecnologica di Vanity Fair</div>
+                            <div class="dicDesc">
+                                Con il personal trainer in tasca, percorsi ed esercizi da fare, valutazione dei progressi... Arriva Evita, l'istruttore da telefonino.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress40/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">26 Ott 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress39/evita.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/sole24ore.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il Sole 24 Ore dedica un ampio servizio al nostro progetto di Mobile Personal Trainer</div>
+                            <div class="dicDesc">
+                                Allenarsi con Evita, il personal trainer su palmare sviluppato dal Laboratorio di Interazione Uomo-Macchina dell'Universita' di Udine.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress39/evita.gif">[vedi la scansione dell'articolo] </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">27 Apr 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress35/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il cortometraggio &quot;6 Maggio 1976&quot; sul Messaggero Veneto</div>
+                            <div class="dicDesc">
+                                Venzone, il sisma in un video di 8 minuti, e' stato realizzato dall'ateneo di Udine - spiegato al computer il crollo del duomo.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress35/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">27 Apr 2006</div>
+                            <div>
+                                <a href="http://www.repubblica.it/2006/04/sezioni/scuola_e_universita/servizi/friuli-terremoto/friuli-terremoto/friuli-terremoto.html"><img alt="@linkimage" src="images/diconodinoi/giornali/repubblica.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">La ricostruzione virtuale del sisma del friuli realizzata dall'HCI Lab su Repubblica</div>
+                            <div class="dicDesc">Trent'anni dopo il Friuli trema ancora
+                                ma questa volta è solo sul computer.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://www.repubblica.it/2006/04/sezioni/scuola_e_universita/servizi/friuli-terremoto/friuli-terremoto/friuli-terremoto.html">[vedi l'articolo sul portale web di Repubblica]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">20 Apr 2006</div>
+                            <div>
+                                <a href="http://www.repubblica.it/2006/04/sezioni/scuola_e_universita/servizi/turismo-podcast/turismo-podcast/turismo-podcast.html"><img alt="@linkimage" src="images/diconodinoi/giornali/repubblica.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">La guida turistica mobile dell'HCI Lab su Repubblica</div>
+                            <div class="dicDesc">
+                                La guida turistica va in pensione presto viaggeremo con Gps e iPod, l'università di Udine ha progettato un software con il Global positioning system per partire senza carta.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://www.repubblica.it/2006/04/sezioni/scuola_e_universita/servizi/turismo-podcast/turismo-podcast/turismo-podcast.html">[vedi l'articolo sul portale web di Repubblica]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">23 Mar 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress33/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/sole24ore.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il Sole 24 Ore parla del nostro progetto di guida turistica mobile</div>
+                            <div class="dicDesc">
+                                A Udine si prepara la prossima generazione di guide turistiche elettroniche destinate ad abbinare spiegazioni e racconti audio a filmati e immagini in 3D che interagiscono con un sistema di localizzazione GPS.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress33/scansione.gif">[vedi la scansione dell'articolo] </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">02 Dic 2005</div>
+                            <div>
+                                <a href="http://www.businessweek.com/innovate/content/dec2005/id20051202_581305.htm"><img alt="@linkimage" src="images/diconodinoi/giornali/businessweek.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il direttore del nostro laboratorio intervistato da BusinessWeek</div>
+                            <div class="dicDesc">
+                                BusinessWeek e' la rivista di business con la maggior diffusione mondiale, Luca Chittaro e' stato uno degli esperti intervistati per un
+                                articolo sulla user experience. 
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://www.businessweek.com/innovate/content/dec2005/id20051202_581305.htm">[vedi l'articolo sul portale web di Business Week]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">19 Ott 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress27/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">La pagina di Economia del Gazzettino dedica spazio alle novita' che l'HCI Lab presentera' alla 42esima edizione di SMAU</div>
+                            <div class="dicDesc">
+                                Il futuro del business e' virtuale, In volo acrobatico con le Frecce Tricolori e in giro turistico col computer palmare.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress27/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">12 Set 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress25/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/volare.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Anche la rivista Volare dedica spazio al simulatore realizzato dall'HCI Lab</div>
+                            <div class="dicDesc">
+                                Tutti in volo con le Frecce Tricolori, un nuovo e realistico simulatore di volo presentato a Rivolto.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress25/scansione.jpg">[vedi la scansione dell'articolo] </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">05 Set 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress24/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/newton.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Newton dedica una pagina intera al simulatore dell'MB-339 PAN</div>
+                            <div class="dicDesc">
+                                Acrobazie in cielo e in terra, &quot;Volare&quot; in pattuglia con le Frecce Tricolori o scatenarsi al volante: ecco gli ultimi brividi (virtuali) da provare sul proprio computer.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress24/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">02 Set 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress23/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/quark.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il simulatore dell'MB-339 PAN in uno speciale della rivista QUARK</div>
+                            <div class="dicDesc">
+                                Pilota una Freccia con il computer Tonneaux, Bomba e Schneider. Eseguiti dall'abitacolo di un Mb339-Pan, ricostruito in 3D e cosi' perfetto da sembrare vero.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress23/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">27 Lug 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress21/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il simulatore dell'MB-339 PAN in un articolo del Gazzettino</div>
+                            <div class="dicDesc">
+                                Frecce Tricolori sul computer di casa, l'Università di Udine ha messo a punto un software che consente di simulare le acrobazie della pattuglia acrobatica che festeggia i 44 anni.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress21/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">27 Lug 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress22/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/piccolo.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il simulatore del velivolo usato dalle Frecce Tricolori in un articolo de Il Piccolo</div>
+                            <div class="dicDesc">
+                                Le acrobazie delle Frecce Tricolori diventano virtuali, presentato il nuovo simulatore di volo realizzato dall'Universita' di Udine: consente di pilotare gli aerei dal pc di casa.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress22/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">12 Giu 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress20/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Studenti dell'HCI Lab vincono l'Imagine Cup con un progetto su tecnologie mobili e 3D sviluppate nel laboratorio</div>
+                            <div class="dicDesc">
+                                Informatica, udinesi alle finali in Giappone, quattro studenti dell'università rappresenteranno l'Italia alla Imagine Cup 2005 di Microsoft.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress20/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">11 Giu 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress19/scansione.jpg"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Gli studenti dell'HCI Lab  vincono le finali nazionali dell'Imagine Cup 2005 grazie alle competenze avanzate acquisite nel laboratorio.</div>
+                            <div class="dicDesc">TellMe, poker d'assi in Giappone.</div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress19/scansione.jpg">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">04 Apr 2005</div>
+                            <div>
+                                <a href="http://news.bbc.co.uk/1/hi/wales/north_west/4398683.stm"><img alt="@linkimage" src="images/diconodinoi/giornali/bbcnews.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">BBC News menziona uno dei nostri progetti.</div>
+                            <div class="dicDesc">
+                                In un servizio sul Web3D, BBC News menziona &quot;un progetto  dell'Universita' di Udine in Italia con cui i visitatori di una citta'  possono usare grafica 3D dei siti turistici sui propri dispositivi mobili&quot;.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://news.bbc.co.uk/1/hi/wales/north_west/4398683.stm">[vedi l'articolo sul portale web di BBC NEWS]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">14 Ott 2004</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress17/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il nostro progetto imprenditoriale alle finali del Premio Nazionale Innovazione</div>
+                            <div class="dicDesc">
+                                Alla selezione regionale hanno partecipato 95 team e solo 3 sono stati selezionati per le finali, fra cui il progetto Mobile 3D
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress17/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">17 Lug 2004</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress16/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il gruppo Mobile 3D del nostro laboratorio tra gli 8 finalisti del premio Start Cup</div>
+                            <div class="dicDesc">
+                                Dal software ai sedili d'auto: premiate le idee innovative, ieri al Teatrone la  serata conclusiva del premio sull'innovazione Start Cup.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress16/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">08 Giu 2004</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress13/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Distrazione al volante e  dispositivi mobili: il prof. Luca Chittaro sul Gazzettino</div>
+                            <div class="dicDesc">
+                                Sicurezza al volante, studio accusa l'auricolare del telefonino: &quot;Non riduce gli incidenti stradali&quot;.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress13/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">31 Gen 2004</div>
+                            <div>
+                                <a href="http://notizie.virgilio.it/primopiano/014/"><img alt="@linkimage" src="images/diconodinoi/giornali/virgilio.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Intervista al prof. Luca Chittaro sul portale Virgilio</div>
+                            <div class="dicDesc">
+                                Il computer che spia le nostre emozioni, Macchine che leggono i nostri sentimenti: uno strumento utile o una forma di controllo?
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://notizie.virgilio.it/primopiano/014/">[vedi l'articolo sul portale web di Virgilio]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">23 Gen 2004</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress6/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/sole24ore.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il nostro progetto di simulazione capi d'abbigliamento appare sul Sole 24 ore</div>
+                            <div class="dicDesc">
+                                La via del dialogo funziona, Il laboratorio di Interazione Uomo-Macchina sperimenta l'uso della realtà virtuale per disegnare abiti.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress6/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">09 Set 2003</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress15/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">L'evento internazionale Mobile HCI 2003 organizzato dal nostro laboratorio</div>
+                            <div class="dicDesc">
+                                Telefonia: congresso mondiale.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress15/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">06 Set 2003</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress14/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Mobile HCI 2003 in un articolo del Gazzettino</div>
+                            <div class="dicDesc">
+                                Congresso internazionale in città su telefonia e sistemi infomatici mobili.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress14/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">03 Mar 2003</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress12/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il sito 3D delle Frecce Tricolori realizzato dal nostro laboratorio</div>
+                            <div class="dicDesc">
+                                Volare sulle Frecce via web,  E' il primo sito del genere in tutto il mondo.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress12/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">27 Feb 2003</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress10/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Volare con le Frecce Tricolori, ora si può, grazie al nostro laboratorio</div>
+                            <div class="dicDesc">
+                                In un sito Web le acrobazie della Pan, Il frutto di oltre un anno di lavoro dello staff guidato da Luca Chittaro.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress10/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">23 Nov 2002</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress11/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Presentato allo SMAU un prodotto  del nostro laboratorio</div>
+                            <div class="dicDesc">
+                                La scienza fa esperimenti in rete, presentato allo SMAU un software per lo svolgimento collaborativo di esperimenti scientifici, realizzato dall'Università di Udine e dal Sincrotrone.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress11/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">26 Giu 2002</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress3/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Udine 3D segnalato da Parallelgraphics</div>
+                            <div class="dicDesc">
+                                Il sito Udine3D incluso nella classifica dei migliori siti tridimensionali.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress3/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">23 Giu 2001</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress2/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/gazzettino.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Udine3D segnalato da Parallelgraphics</div>
+                            <div class="dicDesc">
+                                Udine virtuale star della Rete, Il sito in 3D dell'Ateneo rappresenta l'Italia nella hit dei migliori al mondo.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress2/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">02 Giu 2001</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress1/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/messaggero.jpg" class="presssmall" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il sito Udine 3D, realizzato dal nostro laboratorio, va on-line</div>
+                            <div class="dicDesc">Una passeggiata nella città virtuale.</div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress1/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">22 Gen 2001</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress4/scansione.gif"><img alt="@linkimage" src="images/diconodinoi/giornali/sole24ore.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il prof. Luca Chittaro intervistato  sul Sole 24 Ore</div>
+                            <div class="dicDesc">
+                                Chittaro, mago dell'informatica, Nuovi progetti d'avanguardia del docente di Udine.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress4/scansione.gif">[vedi la scansione dell'articolo]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Universit&agrave; degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

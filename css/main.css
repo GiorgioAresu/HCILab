@@ -1,0 +1,5 @@
+@import url(reset.css) screen, print, handheld; /* CSS DI RESET */
+
+@import url(visual.css) screen; /* CSS PER LA GRAFICA */
+
+@import url(print.css) print, handheld; /* CSS PER LA STAMPA */

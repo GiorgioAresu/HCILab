@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - Dicono di noi - radio e tv</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                      // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            	$(document).ready(function(){
+            		var tmp = $('.catTitle').css("width");
+            		cssLoaded = (tmp === "155px");
+            		
+            	if (cssLoaded) {
+            	//Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            	$(".catList li").hover(function () {
+            		$(this).stop().animate({paddingLeft: 40}, 'fast');
+            	}, function () {
+            		$(this).stop().animate({paddingLeft: 20}, 'fast');
+            	});
+            	};
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent" id="persone">
+                    <h1>Dicono di noi - Radio e TV</h1>
+                    <div class="dicB" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">
+                        Radio e TV
+                    </div>
+                    <div class="dicB" style="cursor: pointer;" onclick="location.href='diconodinoi_giornali.html';">
+                        Giornali
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">13 Giu 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress38/rai2.wmv"><img alt="@linkimage" src="images/diconodinoi/radiotv/rai2.gif" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il direttore del nostro laboratorio in diretta su RAI 2</div>
+                            <div class="dicDesc">
+                                Luca Chittaro e' stato invitato a presentare il nostro progetto di guide mobili nel popolare programma di RAI2 &quot;Piazza Grande&quot;, dove e' stato intervistato dal noto conduttore Giancarlo Magalli.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress38/rai2.wmv">[guarda un estratto del video  in formato WMV, ~6min ~13,4MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">30 Mag 2006</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress37/terremoto_rai3.wmv"><img alt="@linkimage" src="images/diconodinoi/radiotv/rai3.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il prof. Luca Chittaro intervistato da Rai3 in uno speciale sul  terremoto del Friuli del 6 Maggio 1976  </div>
+                            <div class="dicDesc">Rai3 manda in onda uno speciale dedicato al trentesimo anniversario del terremoto del Friuli del 1976. Tra le celebrazioni  spicca la ricostruzione virtuale del crollo del Duomo di Venzone realizzata dal Laboratorio di Interazione Uomo-Macchina dell'Universita' di Udine.</div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress37/terremoto_rai3.wmv">[guarda l'intervista in formato WMV, ~2min ~10MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">01 Nov 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress31/RAI3_SMAU2005.avi"><img alt="@linkimage" src="images/diconodinoi/radiotv/rai3.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">HCI Lab su Nea Polis, rubrica tecnologica di RAI3</div>
+                            <div class="dicDesc">Nea Polis, rubrica di RAI3 dedicata alle nuove tecnologie, manda in onda sulla rete nazionale un servizio sul simulatore immersivo che HCI Lab ha presentato a SMAU 2005. </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress31/RAI3_SMAU2005.avi">[guarda il servizio in formato WMV9, ~2min ~10MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">23 Ott 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress29/RAI24News_SMAU2005.avi"><img alt="@linkimage" src="images/diconodinoi/radiotv//rai24.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">HCI Lab in uno speciale di Rai News24 realizzato a SMAU 2005</div>
+                            <div class="dicDesc">Rai News24 manda in onda un servizio dedicato al simulatore di volo immersivo presentato da HCI Lab a SMAU 2005.
+                            </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress29/RAI24News_SMAU2005.avi">[guarda il servizio in formato WMV9, ~2min ~5MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">22 Ott 2005</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress26/Radio24_SMAU2005.mp3"><img alt="@linkimage" src="images/diconodinoi/radiotv/radio24.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">HCI Lab nello speciale SMAU di Radio24, l'emittente del Sole 24 Ore</div>
+                            <div class="dicDesc">In diretta da SMAU, tra le novità, spicca per interesse il simulatore di volo immersivo proposto dal Laboratorio di Interazione Uomo-Machina dell'Universita' di Udine. Ce ne parla Augusto Senerchia, assegnista di ricerca presso il laboratorio.</div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress26/Radio24_SMAU2005.mp3">[ascolta l'intervista in formato MP3, ~3min ~500KB] </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">26 Apr 2004</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress8/Radio3_Fahrenheit.mp3"><img alt="@linkimage" src="images/diconodinoi/radiotv/radioraitre.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il prof. Luca Chittaro intervistato dalla trasmissione &quot;Fahrenheit&quot; di RAI Radio 3</div>
+                            <div class="dicDesc">La Macchina Umana: il complesso rapporto fra uomo e automazione. Ospiti: prof. Giorgio Israel (Università di Roma &quot;La Sapienza&quot;), prof. Giuseppe O. Longo (Università di Trieste), prof. Luca Chittaro (Università di Udine).</div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress8/Radio3_Fahrenheit.mp3">[ascolta un frammento di trasmissione in formato MP3, ~6min ~3MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">08 Set 2003</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress7/Radio24_Mobile.mp3"><img alt="@linkimage" src="images/diconodinoi/radiotv/radio24.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il prof. Luca Chittaro intervistato su Radio24, l'emittente del Sole 24 Ore</div>
+                            <div class="dicDesc">2024: Ancora sulla mobilità, si svolge a Udine il Congresso internazionale sull'Interazione Uomo-Macchina con Dispositivi Mobili. </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress7/Radio24_Mobile.mp3">[ascolta l&quot;intervista in formato MP3, ~18min ~8.3MB]</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dicContainer">
+                        <div class="dicLeft">
+                            <div class="dicDate">04 Gen 2001</div>
+                            <div>
+                                <a href="http://hcilab.uniud.it/aboutus/itpress5/Radio1MacchinaUomo.mp3"><img alt="@linkimage" src="images/diconodinoi/radiotv/radioraiuno.jpg" /></a>
+                            </div>
+                        </div>
+                        <div class="dicRight">
+                            <div class="dicTitle">Il prof. Luca Chittaro intervistato su RAI Radio 1</div>
+                            <div class="dicDesc">RAI Radio Uno, la piu' seguita emittente in Italia (8 milioni di ascoltatori al giorno dalle rilevazioni Audiradio), ha dedicato la propria mattinata del 4/01/2001 al tema &quot;LA MACCHINA E L'UOMO&quot;. A delineare scenari futuri sono stati chiamati il dott. Andrea Ortensi (Presidente della Societa' Italiana di Microchirurgia), l'ing. Roberto Vacca (futurologo e divulgatore scientifico) ed il prof. Luca Chittaro (docente di Interazione Uomo-Macchina all'Universita' di Udine). </div>
+                            <div class="dicLink">
+                                <a href="http://hcilab.uniud.it/aboutus/itpress5/Radio1MacchinaUomo.mp3">[ascolta un frammento di trasmissione  in formato MP3, ~2min ~500K]</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Universit&agrave; degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

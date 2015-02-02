@@ -1,0 +1,1217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - Pubblicazioni</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                     // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            $(document).ready(function(){
+            	var tmp = $('.catTitle').css("width");
+            	cssLoaded = (tmp === "155px");
+            
+            if (cssLoaded) {
+            // Collassa tutti i controlli al caricamento della pagina tranne il primo
+            $(".expandableContainer").slice(1).find(".expandableContainerBody").slideToggle("slow");
+            
+            //Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            $(".catList li").hover(function () {
+            $(this).stop().animate({paddingLeft: 40}, 'fast');
+            }, function () {
+            $(this).stop().animate({paddingLeft: 20}, 'fast');
+            });
+            
+            //Il div "cat_list" verrà chiuso con un effetto slide
+            $(".expandableContainerTitle").click(function () {
+            // Espandendo uno collasso gli altri
+            var index = $(".expandableContainer .expandableContainerTitle").index(this);
+            var items = $(".expandableContainerTitle").length;
+            $(".expandableContainer").slice(0,index).find(".expandableContainerBody").slideUp("slow");
+            $(".expandableContainer").slice(index+1,items).find(".expandableContainerBody").slideUp("slow");
+            $(".expandableContainerBody").eq(index).slideToggle("slow");
+            
+            // Espandere/collassare singolarmente
+            /*$(this).parent().find(".newsList").slideToggle("slow");*/
+            });
+            };
+            });
+                 
+        </script>    
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent" id="documenti">
+                    <h1>Pubblicazioni</h1>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2012</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Passengers' Safety in Aircraft Evacuations: Employing Serious Games to Educate and Persuade (BEST PAPER AWARD)</span>Proceedings of PERSUASIVE 2012: 7th International Conference on Persuasive Technologies, LNCS 7284, Springer-Verlag, Berlin, June 2012, pp.215–226.
+                                <div>
+                                    <a href="publications/2012-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Sioni R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Turning the Classic Snake Mobile Game
+                                into a Location–Based Exergame that Encourages Walking</span>Proceedings of PERSUASIVE 2012: 7th International Conference on Persuasive Technologies, LNCS 7284, Springer-Verlag, Berlin, June 2012, pp.43-54.
+                                <div>
+                                    <a href="publications/2012-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Sioni R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">An electromyographic study of a laser pointer-style device vs. mouse and keyboard in an object arrangement task on a large screen</span>International Journal of Human-Computer Studies, Vol. 70, no. 3, pp. 234-255.
+                                <div>
+                                    <a href="publications/2012-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2011</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Lino C., Christie M., Ranon R., Bares W.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">The director's lens: an intelligent assistant for virtual cinematography</span>Proceedings of MM 2011: 19th ACM International Conference on Multimedia, ACM Press, New York, December 2011, pp. 323-332.
+                                <div>
+                                    <a href="publications/2011-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Carchietti E., De Marco L., Zampa A.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Personalized Emergency Medical Assistance for Disabled People</span>User Modeling and
+                                User-Adapted Interaction, Vol. 20, no. 4-5, pp. 407-440.
+                                <div>
+                                    <a href="publications/2011-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Pedestrian Navigation with Degraded GPS Signal: Investigating the Effects of Visualizing Position Uncertainty</span>Proceedings of MOBILE HCI 2011: 13th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2011, pp. 221-230.
+                                <div>
+                                    <a href="publications/2011-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Bellani M., Fornasari L., Chittaro L., Brambilla P.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Virtual reality in autism: state of the art</span>Epidemiology and Psychiatric Sciences, Vol. 20, no. 3, pp 235-238.
+                                <div>
+                                    <a href="publications/2011-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Designing Visual User Interfaces for Mobile Applications (Invited Tutorial)</span>Proceedings of EICS 2011: 3rd ACM International Symposium on Engineering
+                                Interactive Computing Systems,
+                                ACM Press, New York, June 2011, pp. 331-332.
+                                <div>
+                                    <a href="publications/2011-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing References to Off-Screen Content on Mobile Devices: a Comparison of Arrows, Wedge, and Overview+Detail</span>Interacting with Computers, March 2011, Vol. 23, No. 2, pp. 156-166.
+                                <div>
+                                    <a href="publications/2011-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2010</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Smarter Phones for Healthier Lifestyles: An Adaptive Fitness Game</span>IEEE Pervasive Computing, October/December 2010, Vol. 9,
+                                No. 4, pp. 51-57.
+                                <div>
+                                    <a href="publications/2010-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L., Ranon R., Visintini D., Siotto E.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A High-Level Tool for Curators of 3D Virtual Visits and its Application to a Virtual Exhibition of Renaissance Frescoes</span>Proceedings of VAST 2010: 11th International Symposium on Virtual Reality, Archaeology and Cultural Heritage, Eurographics/Blackwell Publishing, Oxford, UK, September 2010, pp. 147-154.
+                                <div>
+                                    <a href="publications/2010-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Carchietti E., Coppo M.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Using Mobile Devices to Support Communication Between Emergency Medical Responders and Deaf People</span>Proceedings of MOBILE HCI 2010: 12th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2010, pp. 7-16.
+                                <div>
+                                    <a href="publications/2010-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Marassi A.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Supporting Blind Users in Selecting From Very Long Lists of Items on Mobile Phones</span>Proceedings of MOBILE HCI 2010: 12th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2010, pp. 27-30.
+                                <div>
+                                    <a href="publications/2010-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Zangrando N.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">The Persuasive Power of Virtual Reality: Effects of Simulated Human Distress on Attitudes towards Fire Safety</span>Proceedings of PERSUASIVE 2010: 5th International Conference on Persuasive Technologies,  LNCS 6137, Springer, Berlin, June 2010, pp. 58-69.
+                                <div>
+                                    <a href="publications/2010-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">VEX-CMS: A tool to design virtual exhibitions and walkthroughs that integrates automatic camera control capabilities</span>Proceedings of SG 2010: 10th international symposium on Smart Graphics, Lecture Notes in Computer Science 6133, Springer Verlag, Berlin Heidelberg, June 2010, pp. 103-114.
+                                <div>
+                                    <a href="publications/2010-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ranon R., Christie M., Urli T.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Accurately Measuring the Satisfaction of Visual Properties in Virtual Camera Control</span>Proceedings of SG 2010: 10th international symposium on Smart Graphics, Lecture Notes in Computer Science 6133, Springer Verlag, Berlin Heidelberg, June 2010, pp. 91-102.
+                                <div>
+                                    <a href="publications/2010-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Distinctive aspects of mobile interaction and their implications for the design of multimodal interfaces</span>Journal on Multimodal User Interfaces,
+                                April 2010,
+                                Vol. 3, No. 3, pp. 157-165.
+                                <div>
+                                    <a href="publications/2010-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Cabas Vidani A., Chittaro L., Carchietti E.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Assessing nurses' acceptance of a serious game for emergency medical services</span>Proceedings of VS-GAMES 2010: 2nd International Conference on Games and Virtual Worlds for Serious Applications, IEEE Computer Society Press, Los Alamitos, CA, USA, March 2010, pp. 101-108.
+                                <div>
+                                    <a href="publications/2010-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2009</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R., Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">3D Object Arrangement for Novice Users: the Effectiveness of Combining a First-Person and a Map View</span>Proceedings of VRST-2009: 16th ACM Symposium on Virtual Reality Software &amp; Technology, ACM Press, New York, November 2009, pp. 171-178.
+                                <div>
+                                    <a href="publications/2009-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A Mobile Starfield Visualization with Space Compression Capabilities</span>Proceedings of MOBILE HCI 2009: 11th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2009.
+                                <div>
+                                    <a href="publications/2009-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R., Carchietti E., Zampa A., Biasutti E., De Marco L., Senerchia A. </h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A knowledge-based system to support emergency medical services for disabled patients</span>Proceedings of the 12th Conference on Artificial Intelligence in Medicine (AIME'09), Springer-Verlag, Berlin, July 2009, pp. 176-180.
+                                <div>
+                                    <a href="publications/2009-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R., De Marco L., Senerchia A.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">User
+                                modeling of disabled persons for generating
+                                instructions to medical first responders</span>Proceedings of the
+                                International Conference on User Modeling,
+                                Adaptation, and Personalization (UMAP 2009), Springer-Verlag, Berlin, June 2009, pp. 435-440.
+                                <div>
+                                    <a href="publications/2009-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Filtering Fitness Trail Content Generated by Mobile Users</span>Proceedings of the International Conference on User
+                                Modeling, Adaptation, and Personalization (UMAP 2009), Springer-Verlag,
+                                Berlin, June 2009, pp. 441-446.
+                                <div>
+                                    <a href="publications/2009-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Serious games for training occupants of a building in
+                                personal fire safety skills</span>Proceedings of VS-GAMES'09:
+                                IEEE First International Conference on Games and Virtual Worlds for
+                                Serious Applications, IEEE Computer Society Press, Los Alamitos, CA,
+                                USA, March 2009, pp. 76-83.
+                                <div>
+                                    <a href="publications/2009-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Cabas Vidani A., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Using a Task Modeling Formalism in the Design of Serious Games for Emergency Medical Procedures</span>Proceedings
+                                of VS-GAMES'09: IEEE First International Conference on Games and
+                                Virtual Worlds for Serious Applications, IEEE Computer Society Press,
+                                Los Alamitos, CA, USA, March 2009, pp. 95-102.
+                                <div>
+                                    <a href="publications/2009-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A Mobile RFID-Based System for Supporting Evacuation of Buildings</span>Proceedings of Mobile Response 2008: Second International Workshop on Mobile Information Technology for Emergency Response, Springer-Verlag, Berlin, February 2009, pp. 22-31.
+                                <div>
+                                    <a href="publications/2009-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2008</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L., Gabrielli S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Navigation Techniques for Small-screen Devices: an Evaluation on Maps and Web pages</span>International Journal of Human-Computer Studies, February 2008, Vol. 66, No. 2, pp. 78-97.
+                                <div>
+                                    <a href="publications/2008-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Interactive Visual Analysis of Geographic Data on Mobile Devices based on Dynamic Queries</span>Journal of Visual Languages and Computing, February 2008, Vol. 19, No. 1, pp. 99-122.
+                                <div>
+                                    <a href="publications/2008-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">MOPET: A Context-Aware and User-Adaptive Wearable System for Fitness Training</span>Artificial Intelligence In Medicine, February 2008, Vol. 42, No. 2, pp. 153-163.
+                                <div>
+                                    <a href="publications/2008-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L., Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Mobrex: Visualizing Users' Mobile Browsing Behaviors</span>IEEE Computer Graphics and Applications, January/February 2008, Vol. 28, No. 1, pp. 24-32.
+                                <div>
+                                    <a href="publications/2008-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>M. Klann, A. Malizia, L. Chittaro, I. Aedo, S. Levialdi</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">HCI for Emergencies</span>Proceedings of CHI2008: 26th ACM Conference on Human Factors in
+                                Computing Systems, Extended Abstracts, ACM Press, New York, April 2008,
+                                pp. 3945-3948.
+                                <div>
+                                    <a href="publications/2008-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Presenting Evacuation Instructions on Mobile Devices by means of Location-Aware 3D Virtual Environments</span>Proceedings of
+                                MOBILE HCI 2008: 10th International Conference on Human-Computer
+                                Interaction with Mobile Devices and Services, ACM Press, New York,
+                                September 2008, pp. 395-398.
+                                <div>
+                                    <a href="publications/2008-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L., Parlato E.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Map, Diagram, and Web Page Navigation on Mobile Devices: the Effectiveness of Zoomable User Interfaces with Overviews</span>Proceedings of MOBILE HCI 2008: 10th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2008, pp. 147-156.
+                                <div>
+                                    <a href="publications/2008-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>L. Chittaro</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Interacting with Visual Interfaces on Mobile Devices
+                                (Invited Talk)</span>Proceedings of the 20th IFIP World Computer Congress, volume on
+                                Human-Computer Interaction (HCIS),
+                                IFIP Springer Series in Computer Science, Springer, Berlin, September
+                                2008, pp. 1-5.
+                                <div>
+                                    <a href="publications/2008-10.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burelli, P., Di Gaspero L., Ermetici E., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Virtual Camera
+                                Composition with Particle Swarm Optimization</span>Proceedings of
+                                SG 2008: 8th international symposium on Smart Graphics, Lecture Notes
+                                in Computer Science 5166, Springer Verlag, Berlin Heidelberg,
+                                August 2008, pp. 130-141.
+                                <div>
+                                    <a href="publications/2008-11.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Decluttering of Icons based on Aggregation in Mobile Maps
+                                </span>Meng L., Zipf A., Winter S. (eds), Map-based Mobile Services - Design, Interaction and Usability, Springer, Berlin, March 2008, pp. 13-32.
+                                <div>
+                                    <a href="publications/2008-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">An Adaptive 3D Virtual Environment for Learning
+                                the X3D Language</span>Proceedings of the 2008 International
+                                Conference on Intelligent User Interfaces (IUI 2008), ACM Press, New York, January
+                                2008, pp. 419-420.
+                                <div>
+                                    <a href="publications/2008-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2007</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Navigation in 3D virtual environments: Effects of user experience and location-pointing navigation aids</span>International Journal of Human-Computer Studies, November 2007, Vol. 65, No. 11, pp. 945-958.
+                                <div>
+                                    <a href="publications/2007-13.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Web3D Technologies in Learning, Education and
+                                Training: Motivations, Issues, Opportunities</span>Computers &amp; Education
+                                Journal, August 2007, Vol. 49, No. 1, pp. 3-18.
+                                <div>
+                                    <a href="publications/2007-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ieronutti L., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Employing virtual humans for education and training in X3D/VRML worlds</span>Computers &amp; Education Journal, August 2007, Vol. 49, No. 1, pp. 93-109.
+                                <div>
+                                    <a href="publications/2007-10.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Adaptive Hypermedia Techniques for 3D
+                                Educational Virtual Environments</span>IEEE Intelligent Systems, July/August 2007, Vol. 22,
+                                No. 4,  pp. 31-37.
+                                <div>
+                                    <a href="publications/2007-12.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Nadalutti D., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visual Analysis of Users' Performance Data in
+                                Fitness Activities</span>Special Issue on Visual Analytics, Computers &amp;
+                                Graphics, June 2007, Vol. 31, No. 3, pp. 429-439.
+                                <div>
+                                    <a href="publications/2007-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Zuliani F., Carchietti E.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Mobile Devices in Emergency Medical Services:
+                                User Evaluation of a PDA-based Interface for
+                                Ambulance Run Reporting</span>Proceedings of Mobile Response 2007:
+                                International Workshop on Mobile Information
+                                Technology for Emergency Response,
+                                Springer-Verlag, Berlin, August 2007, pp. 20-29.
+                                <div>
+                                    <a href="publications/2007-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Geographic Data Visualization on Mobile
+                                Devices for User's Navigation and Decision Support Activities</span>Belussi A., Catania B., Clementini E., Ferrari E. (eds), Spatial Data on
+                                the Web - Modeling and Management, Springer, Berlin, July 2007, pp. 261-284.
+                                <div>
+                                    <a href="publications/2007-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Ranon R., Verona A.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Adaptation of Graphics and Gameplay in Fitness Games by Exploiting Motion and Physiological Sensors</span>Butz A. et al. (eds.), Proceedings of SG 2007: 7th International Symposium on Smart Graphics, Lecture Notes in Computer Science 4569, Springer-Verlag, Berlin Heidelberg, June 2007, pp. 85-96.
+                                <div>
+                                    <a href="publications/2007-11.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Adaptive 3D Web Sites</span>In Brusilovsky, P., Kobsa,
+                                A., Nejdl, W. (eds.), The Adaptive Web - Methods and Strategies of Web
+                                Personalization, Lecture Notes in Computer Science Vol. 4321,
+                                Springer-Verlag, Berlin, June 2007, pp. 433-464.
+                                <div>
+                                    <a href="publications/2007-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">Ranon R., De Marco L., Senerchia A., Gabrielli S., Chittaro L., Pugliese R.,
+                                Del Cano L., Asnicar F., Prica M.
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A Web-based Tool for Collaborative Access
+                                to Scientific Instruments in Cyberinfrastructures</span>Davoli F., Meyer N., Pugliese, R., Zappatore S. (Eds.), Grid Enabled Remote Instrumentation, Springer, Berlin, October 2008, pp. 237-251.
+                                <div>
+                                    <a href="publications/2007-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Coppo M.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Using Web3D Technologies for
+                                Visualization and Search of Signs in an International Sign Language
+                                Dictionary</span>Proceedings of Web3D 2007: 12th International Conference on
+                                3D Web Technology, ACM Press, New York, April 2007, pp. 61-70.
+                                <div>
+                                    <a href="publications/2007-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Mulloni A., Nadalutti D., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Interactive Walkthrough of Large
+                                3D Models of Buildings on Mobile Devices</span>Proceedings of Web3D 2007:
+                                12th International Conference on 3D Web Technology, ACM Press, New York,
+                                April 2007, pp. 17-25.
+                                <div>
+                                    <a href="publications/2007-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">&quot;Beyond the desktop, Out of the Office…&quot;
+                                Designing Interactive Graphics Applications for Mobile Devices</span>Proceedings of EG IT 2007: 5th Eurographics Italy Conference,
+                                Eurographics Publishing, February 2007, pp. 151-154.
+                                <div>
+                                    <a href="publications/2007-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2006</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R., Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">VU-Flow: A Visualization Tool for Analyzing Navigation in Virtual Environments</span>Special Issue on Visual Analytics, IEEE Transactions on Visualization and Computer Graphics, November/December 2006, Vol. 12, No. 6, pp. 1475-1485.
+                                <div>
+                                    <a href="publications/2006-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing Information on Mobile Devices</span>IEEE Computer, March 2006, Vol. 39, No. 3, pp. 40-45.
+                                <div>
+                                    <a href="publications/2006-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Adaptable visual presentation of 2D and 3D learning materials in web-based cyberworlds</span>The Visual Computer Journal, December 2006, Vol. 22, No. 12, pp. 1002-1014.
+                                <div>
+                                    <a href="publications/2006-10.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>L. Chittaro, R. Ranon,  D. Corvaglia</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Destroying Cultural Heritage:
+                                Technical, Emotional and Exhibition Aspects in
+                                Simulating Earthquake Effects on a Gothic Cathedral</span>Proceedings of VAST 2006: 7th
+                                International Symposium on Virtual Reality, Archaeology and
+                                Intelligent Cultural Heritage, Eurographics/Blackwell Publishing,
+                                Oxford, UK, October 2006, pp. 229-236.
+                                <div>
+                                    <a href="publications/2006-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Venkataraman S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Navigation aids for multi-floor virtual
+                                buildings: a comparative evaluation of two approaches</span>Proceedings of
+                                VRST-2006: 13th ACM Symposium on Virtual Reality Software &amp; Technology,
+                                ACM Press, New York, October 2006, pp.227-235.
+                                <div>
+                                    <a href="publications/2006-11.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Bringing mobile guides and fitness activities together: a solution based on an embodied virtual trainer</span>Proceedings of MOBILE HCI 2006: 8th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2006, pp. 29-36.
+                                <div>
+                                    <a href="publications/2006-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L., Gabrielli S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing Locations of Off-Screen Objects on Mobile Devices: A Comparative Evaluation of Three Approaches</span>Proceedings of MOBILE HCI 2006: 8th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2006, pp. 239-246.
+                                <div>
+                                    <a href="publications/2006-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Buttussi F., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">MAge-AniM: a System for Visual Modeling of Embodied Agent Animations and their Replay on Mobile Devices</span>Proceedings of AVI 2006: 8th International Conference on Advanced Visual Interfaces, ACM Press, New York, May 2006, pp. 344-351.
+                                <div>
+                                    <a href="publications/2006-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualization of Patient Data at
+                                Different Temporal Granularities on Mobile Devices </span>Proceedings of AVI
+                                2006: 8th International Conference on Advanced Visual Interfaces, ACM
+                                Press, New York, May 2006, pp. 484-487.
+                                <div>
+                                    <a href="publications/2006-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Nadalutti D., Chittaro L., Buttussi F.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Rendering of X3D Content on Mobile Devices with OpenGL ES</span>Proceedings of Web3D 2006: 11th International Conference on 3D Web Technology, ACM Press, New York, April 2006, pp. 19-26.
+                                <div>
+                                    <a href="publications/2006-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Buttussi F., Chittaro L., Nadalutti D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">H-Animator: A Visual Tool for
+                                Modeling, Reuse and Sharing of X3D Humanoid Animations</span>Proceedings of
+                                Web3D 2006: 11th International Conference on 3D Web Technology, ACM
+                                Press, New York, April 2006, pp. 109-117.
+                                <div>
+                                    <a href="publications/2006-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2005</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing the Results of Interactive Queries for Geographic Data on Mobile Devices</span>Proceedings of ACM GIS 2005: 13th International Symposium on Advances in Geographic Information Systems, ACM Press, New York, November 2005, pp. 277-284.
+                                <div>
+                                    <a href="publications/2005-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Gatla V.K., Venkataraman S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">The Interactive 3D Breakaway Map: a Navigation and Examination Aid for Multi-Floor 3D Worlds</span>Proceedings of CW 2005: 4th International Conference on Cyberworlds, IEEE Press, Los Alamitos, CA, November 2005, pp.59-66.
+                                <div>
+                                    <a href="publications/2005-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L., Rigutti. S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Supporting Presentation Techniques based on Virtual Humans in Educational Virtual Worlds</span>Proceedings of CW 2005: 4th International Conference on Cyberworlds, IEEE Press, Los Alamitos, CA, November 2005, pp.245-252.
+                                <div>
+                                    <a href="publications/2005-10.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Burigat S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Augmenting Audio Messages with Visual Directions in Mobile Guides: an Evaluation of Three Approaches</span>Proceedings of MOBILE HCI 2005: 7th International Conference on Human-Computer Interaction with Mobile Devices and Services, ACM Press, New York, September 2005, pp. 107-114.
+                                <div>
+                                    <a href="publications/2005-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ieronutti L., Ranon R., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">High-Level Visualization of Users’ Navigation in
+                                Virtual Environments </span>Proceedings of Interact 2005: 10th IFIP International Conference on Human-Computer Interaction, Springer Verlag, Berlin, September 2005, pp. 873-885.
+                                <div>
+                                    <a href="publications/2005-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., De Marco L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Evaluating the Effectiveness of &quot;Effective View Navigation&quot; for Very Long Ordered Lists on Mobile Devices</span>Proceedings of Interact 2005: 10th IFIP International Conference on Human-Computer Interaction, Springer Verlag, Berlin, September 2005, pp. 482-495.
+                                <div>
+                                    <a href="publications/2005-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L., De Marco L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Bringing Dynamic Queries to Mobile Devices: a Visual Preference-based Search
+                                Tool for Tourist Decision Support</span>Proceedings of INTERACT 2005: 10th IFIP International Conference on Human-Computer Interaction, Springer Verlag, Berlin, September 2005, pp. 213-226.
+                                <div>
+                                    <a href="publications/2005-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Noirhomme-Fraiture M., Randolet F.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualization of Annual Time Series on PDAs</span>Proceedings of HCII 2005: 11th International Conference on Human-Computer Interaction,
+                                Lawrence Erlbaum Associates, July 2005.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Burigat S., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Location-aware Visualization of VRML Models in GPS-based Mobile Guides</span>Proceedings of Web3D 2005: 10th International Conference on 3D Web Technology, ACM Press, New York, April 2005, pp. 57-64.
+                                <div>
+                                    <a href="publications/2005-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ieronutti L., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A Virtual Human Architecture that Integrates Kinematic, Physical and Behavioral Aspects to Control H-Anim Characters</span>Proceedings of Web3D 2005: 10th International Conference on 3D Web Technology, ACM Press, New York, April 2005, pp. 75-83.
+                                <div>
+                                    <a href="publications/2005-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2004</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Employing Virtual Humans for Education and Training in X3D/VRML Worlds</span>Proceedings of LET-Web3D 2004: 1st International Workshop of Web3D Technologies in Learning, Education and Training, October 2004, pp. 23-27.
+                                <div>
+                                    <a href="publications/2004-13.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Corvaglia D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Virtual Training for Manufacturing and Maintenance
+                                based on Web3D Technologies</span>Proceedings of LET-Web3D 2004: 1st International Workshop on Web3D Technologies in Learning, Education and Training, October 2004, pp. 28-33.
+                                <div>
+                                    <a href="publications/2004-14.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Custinne G., Noirhomme M., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualisation d’informations boursières sur téléphones mobiles</span>Proceedings of IHM-2004: 16th Conférence Francophone sur l'Interaction Homme-Machine, ACM Press, New York, September 2004
+                                <div>
+                                    <a href="publications/2004-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing the Thematic Update Status of Web and WAP Sites on Mobile Phones</span>Proceedings of MOBILE HCI 2004: 6th International Conference on Human-Computer Interaction with Mobile Devices and Services, Lecture Notes in Computer Science 3160, Springer-Verlag, Berlin, September 2004, pp. 415-420.
+                                <div>
+                                    <a href="publications/2004-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Burigat S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Location-aware visualization of a 3D world to select tourist information on a mobile device</span>Proceedings of the 3rd International Workshop on HCI in Mobile Guides, Glasgow, UK, September 2004
+                                <div>
+                                    <a href="publications/2004-12.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Using the X3D Language for Adaptive Manipulation of 3D Web Content</span>Proceedings of AH-2004: 3rd International Conference on Adaptive Hypermedia and Adaptive Web-based Systems, Lecture Notes in Computer Science 3137, Springer-Verlag, Berlin,  pp. 287-290
+                                <div>
+                                    <a href="publications/2004-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Serra M.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Behavioral Programming of Autonomous Characters based on Probabilistic Automata and Personality
+                                </span>Journal of Computer Animation and Virtual Worlds, Vol. 15, No. 3-4, July 2004, pp. 319-326
+                                <div>
+                                    <a href="publications/2004-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., De Marco L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Driver Distraction Caused by Mobile Devices: Studying and Reducing Safety Risks</span>Proceedings of International Workshop on Mobile Technologies and Health: Benefits and Risks, Udine (Italy), June 2004
+                                <div>
+                                    <a href="publications/2004-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Special Issue on HCI Aspects of Mobile Devices and Services</span>Personal and Ubiquitous Computing Journal, Vol. 8, No.2, 2004
+                                <div>
+                                    <a href="http://portal.acm.org/toc.cfm?id=992039&amp;idx=J822&amp;type=issue&amp;coll=portal&amp;dl=ACM&amp;part=affil&amp;WantType=Journals&amp;title=Personal%20and%20Ubiquitous%20Comput" class="smalllink">[More]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">A Visual Tool for Tracing Behaviors of Users in Virtual Environments</span>Proceedings of AVI 2004: 7th International Conference on Advanced Visual Interfaces, ACM Press, New York, May 2004, pp.40-47
+                                <div>
+                                    <a href="publications/2004-09.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Burigat S.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">3D Location-pointing as a Navigation Aid for Virtual Environments</span>Proceedings of AVI 2004: 7th International Conference on Advanced Visual Interfaces, ACM Press, New York,  May 2004, pp.267-274
+                                <div>
+                                    <a href="publications/2004-10.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ieronutti L., Ranon R., Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Automatic Derivation of Electronic Maps from X3D/VRML Worlds</span>Proceedings of Web3D 2004: 9th International Conference on 3D Web Technology, ACM Press, New York, April 2004, pp. 61-70
+                                <div>
+                                    <a href="publications/2004-11.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Hierarchical Model-Based Diagnosis based on Structural Abstraction</span>Artificial Intelligence, Vol. 155, Issues 1-2, 2004, pp.147-182
+                                <div>
+                                    <a href="publications/2004-08.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ieronutti L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Navigating 3D Virtual Environments by Following Embodied Agents: a Proposal and its Informal Evaluation on a Virtual Museum Application</span>Psychnology Journal (Special issue on Human-Computer Interaction), Vol. 2, No 1., 2004, pp. 24-42
+                                <div>
+                                    <a href="publications/2004-07.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2003</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Combi C., Trapasso G.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Data Mining on Temporal Data: a visual Approach and its Clinical Application to Hemodialysis</span>Journal of Visual Languages and Computing, vol.14, no.6, December 2003, pp.591-620
+                                <div>
+                                    <a href="publications/2003-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Ranon R., Chittaro L., Pugliese P.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">The Elettra Virtual Collaboratory: a CSCW System for Scientific Experiments with Ultra-Bright Light Sources</span>Proceedings of HCITALY 2003
+                                <div>
+                                    <a href="publications/2003-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L. (ed.)</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Human-Computer Interaction with Mobile Devices and Services</span>ISBN 3-540-40821-5, Lecture Notes in Computer Science Vol. 2795, Springer Verlag, Berlin, 2003
+                                <div>
+                                    <a href="http://www.springeronline.com/sgw/cda/frontpage/0,10735,5-0-22-7131582-0,00.html" class="smalllink">[More]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Corvaglia D.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">3D Virtual Clothing: from Garment Design to Web3D Visualization and Simulation</span>Proceedings of Web3D 2003: 8th International Conference on 3D Web Technology, ACM Press, New York, March 2003, pp.73-84
+                                <div>
+                                    <a href="publications/2003-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R., Ieronutti L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Guiding Visitors of Web3D Worlds through Automatically Generated Tours</span>Proceedings of Web3D 2003: 8th International Conference on 3D Web Technology, ACM Press, New York, March 2003, pp.27-38
+                                <div>
+                                    <a href="publications/2003-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Combi C.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing Queries on Databases of Temporal Histories: New Metaphors and their Evaluation</span>Data and Knowledge Engineering, vol. 44, no.2, 2003, pp. 239-264
+                                <div>
+                                    <a href="publications/2003-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2002</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Dal Cin P.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Evaluating Interface Design Choices on WAP Phones: Navigation and Selection</span>Personal and Ubiquitous Computing, vol. 6, no. 4, 2002, pp. 237-244
+                                <div>
+                                    <a href="publications/2002-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Camaggio A.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visualizing Bar Charts on WAP Phones</span>Proceedings of MOBILE HCI 2002: 4th International Symposium on Human-Computer Interaction with Mobile Devices, Lecture Notes in Computer Science, Springer-Verlag, Berlin, September 2002, pp. 411-415
+                                <div>
+                                    <a href="publications/2002-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Combi C., Trapasso G.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visual Data Mining of Clinical Databases: an Application to the Hemodialytic Treatment based on 3D Interactive Bar Charts</span>Proceedings of VDM 2002: 2nd International Workshop on Visual Data Mining, Helsinki, Finland
+                                <div>
+                                    <a href="publications/2002-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">New Directions for the Design of Virtual Reality Interfaces to E-Commerce Sites</span>Proceedings of AVI 2002: 5th International Conference on Advanced Visual Interfaces, ACM Press, New York, May 2002, pp. 308-315
+                                <div>
+                                    <a href="publications/2002-04.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Dynamic Generation of Personalized VRML Content: a General Approach and its Application to 3D E-Commerce</span>Proceedings of Web3D 2002: 7th International Conference on 3D Web Technology, ACM Press, New York, February 2002, pp. 145-154
+                                <div>
+                                    <a href="publications/2002-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2001</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Scagnetto I.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Is Semitransparency Useful for Navigating Virtual Environments?</span>Proceedings of VRST-2001: 8th ACM Symposium on Virtual Reality Software &amp; Technology, ACM Press, New York, November 2001, pp.159-166
+                                <div>
+                                    <a href="publications/2001-06.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Dal Cin P.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Evaluating Interface Design Choices on WAP Phones: Single-choice List Selection and Navigation among Cards</span>Proceedings of Mobile HCI 01: 3rd International Workshop on Human Computer Interaction with Mobile Devices, Lille, France
+                                <div>
+                                    <a href="publications/2001-01.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Combi C.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Visual Definition of Temporal Clinical Abstractions: A User Interface Based on Novel Metaphors</span>Proceedings of AIME 01: 8th Conference on Artificial Intelligence in Medicine Europe, Lecture Notes in Computer Science 2101, Berlin, Springer, July 2001, pp. 227-230
+                                <div>
+                                    <a href="publications/2001-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Combi C.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Representation of Temporal Intervals and Relations: Information Visualization Aspects and their Evaluation</span>Proceedings of TIME-01: 8th International Symposium on Temporal Representation and Reasoning, IEEE Press, Los Alamitos, CA, June 2001, pp. 13-20
+                                <div>
+                                    <a href="publications/2001-03.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L. (ed)</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Special Issue on Information Visualization in Medicine</span>Artificial Intelligence in Medicine, vol. 22, no. 2, May 2001
+                                <div>
+                                    <a href="http://www.dimi.uniud.it/~chittaro/IVM/" class="smalllink">[More]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Information Visualization and its Application to Medicine</span>Artificial Intelligence in Medicine, vol. 22, no. 2, May 2001, pp. 81-88
+                                <div>
+                                    <a href="publications/2001-05.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2000</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Ranon R.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Adding Adaptive Features to Virtual Reality Interfaces for E-Commerce</span>Proceedings of AH-2000: International Conference on Adaptive Hypermedia and Adaptive Web-based Systems, Lecture Notes in Computer Science 1892, Springer-Verlag, Berlin, August 2000, pp. 86-97
+                                <div>
+                                    <a href="publications/2000-02.html" class="smalllink">[See abstract and download PDF]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>Chittaro L., Coppola P.</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Animated Products as a Navigation Aid for E-commerce</span>Proceedings of CHI2000: 18th ACM Conference on Human Factors in Computing Systems, Vol. 2, The Hague, The Netherlands; ACM Press, New York, April 2000, pp.107-108
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Università degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

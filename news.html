@@ -1,0 +1,1014 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Laboratorio di Interazione Uomo-Macchina - News</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript">
+            var cssLoaded = false;
+                     // Quando sono carichi tutti i documenti della pagina, possono partire gli effetti jQuery
+            $(document).ready(function(){
+            	var tmp = $('.catTitle').css("width");
+            	cssLoaded = (tmp === "155px");
+            	
+            	if (cssLoaded) {
+            // Collassa tutti i controlli al caricamento della pagina tranne il primo
+            $(".expandableContainer").slice(1).find(".expandableContainerBody").slideToggle("slow");
+            
+            //Quando si passa sopra ad un link presente nel div "cat_list" si aggiunge un padding-left di 20px, e l'effetto dura per 700 ms
+            $(".catList li").hover(function () {
+            $(this).stop().animate({paddingLeft: 40}, 'fast');
+            }, function () {
+            $(this).stop().animate({paddingLeft: 20}, 'fast');
+            });
+            
+            //Il div "cat_list" verrà chiuso con un effetto slide
+            $(".expandableContainerTitle").click(function () {
+            // Espandendo uno collasso gli altri
+            var index = $(".expandableContainer .expandableContainerTitle").index(this);
+            var items = $(".expandableContainerTitle").length;
+            $(".expandableContainer").slice(0,index).find(".expandableContainerBody").slideUp("slow");
+            $(".expandableContainer").slice(index+1,items).find(".expandableContainerBody").slideUp("slow");
+            $(".expandableContainerBody").eq(index).slideToggle("slow");
+            
+            // Espandere/collassare singolarmente
+            /*$(this).parent().find(".expandableContainerBody").slideToggle("slow");*/
+            });
+            };
+            });
+        </script>
+    </head>
+    <body>
+        <div id="contentContenitor">
+            <div id="content">
+                <div id="header">
+                    <div class="link" id="logo" onclick="location.href='index.html';"><img src="images/logolab.png" alt="logo" /></div>
+                    <h1>HCI Lab - Laboratorio di Interazione Uomo-Macchina</h1>
+                    <div class="link" id="logoUni" onclick="location.href='http://www.uniud.it/';"><img src="images/logouni.png" alt="logo" /></div>
+                </div>
+                <div class="sidebar">
+                    <div class="catContainer">
+                        <div class="catTitle" id="catP">
+                            Persone
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='membri.html';">Membri</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='sponsors.html';">Sponsors</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='diconodinoi_radiotv.html';">Dicono di noi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catA">
+                            Attività
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='servizi.html';">Servizi</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='progetti.html';">Progetti</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='corsi.html';">Corsi</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catContainer">
+                        <div class="catTitle" id="catD">
+                            Documenti
+                        </div>
+                        <div class="catList">
+                            <ul>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='news.html';">News</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='pubblicazioni.html';">Pubblicazioni</li>
+                                <li class="link" style="cursor: pointer;" onclick="location.href='video.html';">Video</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="pageContent" id="documenti">
+                    <h1>News</h1>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2012</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>08 Giugno 2012</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il direttore del nostro laboratorio riceve premio per miglior articolo.
+                                </span>Luca Chittaro ha ricevuto oggi il Best Paper Award dell'<a href="http://www.ida.liu.se/conferences/persuasive2012/" title="">International Conference on Persuasive Technology</a>
+                                in Svezia.
+                                E' la prima volta che un italiano riceve tale riconoscimento.
+                                La <a href="http://hcilab.uniud.it/publications/2012-03.html" title="">presentazione premiata</a>
+                                illustra come preparare i passeggeri ad affrontare emergenze sugli aerei di linea,
+                                utilizzando i serious game.
+                                <div>
+                                    <a href="publications/2012-03.html" class="smalllink">[Leggi l'articolo]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>31 Maggio 2012</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab presenta un exergame per l'iPhone che incoraggia l'attività fisica.
+                                </span>Abbiamo trasformato il classico gioco Snake in un exergame mobile nel quale
+                                il giocatore controlla il serpente virtuale camminando in campi da gioco all'aperto.
+                                Oggi abbiamo diffuso un <a href="http://hcilab.uniud.it/demos-videos/item20_it.html" title="">video</a> ed un <a href="http://hcilab.uniud.it/publications/2012-02.html" title="">articolo tecnico</a> sul gioco.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/demos-videos/item20_it.html" class="smalllink">[Guarda il video]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>18 Maggio 2012</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab invitato a presentare a conferenza nazionale sulle Emergenze Non-Convenzionali.
+                                </span>Più di 200 rappresentanti delle varie forze di risposta
+                                alle emergenze (118, vigili del fuoco, protezione
+                                civile, forze dell’ordine, militari,...) hanno partecipato all'evento e
+                                la presentazione che siamo stati invitati a svolgere ha illustrato i
+                                sistemi di realtà virtuale ed i serious game che sviluppiamo per l'addestramento.
+                                <div>
+                                    <a href="http://lucachittaro.nova100.ilsole24ore.com/2012/05/attacco-terroristico-non-convenzionale-cosa-accadrebbe-in-italia.html" class="smalllink">[Leggi una breve cronaca dell'evento]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>08 Maggio 2012</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab all'evento di Assisi dei Vigili del Fuoco.
+                                </span>Il tema del <a href="http://www.vigilfuoco.it/aspx/notizia.aspx?codnews=15153" title="">meeting dei Vigili del Fuoco</a> ha riguardato come aiutare i disabili durante situazioni di emergenza e la presentazione che siamo stati invitati a svolgere ha illustrato i diversi sistemi che stiamo sviluppando per questo scopo.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/soccorsodisabili/risultati.html" class="smalllink">[Maggiori informazioni sulle nostre ricerche]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>28 Febbraio 2012</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Studiare le interfacce utente naturali con l'Elettromiografia (EMG).
+                                </span>Agli utenti piace l'interazione &quot;naturale&quot; con i computer ed i giochi, ma quali sono i suoi effetti sul sistema muscolare?
+                                Iniziamo a fare luce su questo aspetto scarsamente esplorato delle interfacce naturali con uno studie EMG dettagliato
+                                che apparirà nel numero di Marzo della rivista <a href="http://www.journals.elsevier.com/international-journal-of-human-computer-studies/" title="">International Journal of Human-Computer Studies</a>.
+                                Abbiamo analizzato l'attività muscolare degli utenti in attività di puntamento con il controller Wii e l'abbiamo confrontata con i tradizionali mouse e tastiera.
+                                <div>
+                                    <a href="publications/2012-01.html" class="smalllink">[Leggi l'articolo completo qui]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2011</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>28 Dicembre 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Director's Lens: un assistente intelligente per girare film in CG.
+                                </span>Una ricerca del nostro laboratorio, insieme
+                                ad altri partner internazionali (INRIA Rennes, France, e Millsaps College, USA), e' stata presentata alle
+                                conferenze <a href="http://www.acmmm11.org/" title="">ACM Multimedia 2011</a> e <a href="http://www.parisfx.fr/en" title="">ParisFX</a>.
+                                La ricerca riguarda un assistente intelligente per girare film in CG che combina tecniche manuali e
+                                automatiche di controllo della camera. Una breve descrizione del sistema si trova <a href="http://cameracontrol.org/blog/2012/01/04/the-directors-lens-combining-manual-and-automatic-camera-control/" title="">qui</a>,
+                                mentre tutti i dettagli tecnici sono descritti in questo <a href="publications/2011-06.html" title="">articolo</a>.
+                                <div>
+                                    <a href="publications/2011-06.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>02 Dicembre 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab e' diventato membro associato di V-MusT.
+                                </span>Il nostro laboratorio ha aderito a <a href="http://www.v-must.net/" title="">V-MusT</a>, la rete di eccellenza finanziata dall'EU all'interno del VII programma quadro
+                                il cui obbiettivo e' quello di fornire strumenti e supporto per sviluppare musei
+                                virtuali che siano educativi, coinvolgenti, durevoli e facili da mantenere.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>28 Ottobre 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Personalizzazione ed e-health.
+                                </span>La disponibilità di cartelle mediche personali su Web offre nuove opportunità
+                                per fornire ai pazienti assistenza personalizzata. Negli ultimi anni, abbiamo costruito PRESYDIUM, un sistema
+                                che può memorizzare cartelle mediche di pazienti disabili e utilizzarle per il supporto ai
+                                servizi medici di emergenza (118), fornendo informazioni e procedure
+                                su misura per il paziente specifico. Leggi una descrizione dettagliata del lavoro
+                                nell'<a href="publications/2011-05.html" title="">articolo</a> che è appena apparso sulla rivista internazionale <a href="http://www.springer.com/computer/hci/journal/11257" title="">User Modeling and User-Adapted Interaction</a> (UMUAI).
+                                <div>
+                                    <a href="publications/2011-05.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>30 Settembre 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Realtà Virtuale nell'Autismo.
+                                </span>Il nostro laboratorio è entrato a far parte di un team multidisciplinare (che integra competenze di Informatica, Pedagogia, Psicologia e Psichiatria)
+                                per studiare applicazioni di realtà virtuale che possano essere usate da bambini autistici nella formazione e nell'addestramento.
+                                Per una veloce introduzione al tema di ricerca, potete leggere lo stato dell'arte che abbiamo scritto per la rivista
+                                <a href="http://journals.cambridge.org/action/displayJournal?jid=EPS" title="">Epidemiology and Psychiatric Sciences</a>
+                                pubblicata da Cambridge University Press.
+                                <div>
+                                    <a href="publications/2011-03.html" class="smalllink">[Leggi l'articolo completo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>01 Settembre 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Navigare con segnale GPS degradato.
+                                </span>Oggi, alla conferenza internazionale <a href="http://mobilehci2011.org/" title="">MOBILE HCI 2011,</a> il nostro laboratorio ha presentato un articolo relativo alla visualizzazione
+                                dell'incertezza associata ai dati GPS in applicazioni mobili per il supporto alla navigazione. Il rigoroso processo di selezione
+                                della conferenza ha portato all'accettazione di solo 63 full paper e note (23%) su un totale di 276 sottomissioni.
+                                <div>
+                                    <a href="publications/2011-04.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>13 Giugno 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Luca Chittaro e' l'invited tutorialist di ACM EICS 2011.
+                                </span>Il direttore del nostro laboratorio ha presentato oggi il tutorial al <a href="http://eics-conference.org/2011/index.php?content=19" title="">Simposio Internazionale ACM su Engineering Interactive Computing Systems</a>. La lezione svolta si e' focalizzata su come progettare interfacce efficaci per app mobili, con
+                                particolare attenzione agli aspetti visivi.
+                                <div>
+                                    <a href="publications/2011-02.html" class="smalllink">[Scarica un riassunto del tutorial]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>15 Aprile 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Affrontare la mancanza di spazio su schermo nelle visualizzazioni mobili.
+                                </span>Durante la navigazione di spazi informativi di ampie dimensioni su dispositivi mobili, parti importanti del contenuto possono finire
+                                fuori schermo a causa delle limitate dimensioni del display. Abbiamo valutato tre differenti tecniche per mitigare questo problema.
+                                Leggete i risultati che abbiamo ottenuto nell'<a href="publications/2011-01.html" title="">articolo</a> appena apparso sulla rivista <a href="http://www.elsevier.com/locate/intcom" title="">Interacting with Computers</a>.
+                                <div>
+                                    <a href="publications/2011-01.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>15 Marzo 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Focus, la rivista piu' letta in Italia, parla delle nostre ricerche.
+                                </span>In un lungo servizio nel numero di Marzo, la rivista <a href="http://ita.zinio.com/browse/issues/index.jsp?skuId=416157811" title="">Focus</a> ha presentato alcuni dei risultati delle nostre ricerche sui <a href="/projects/2010-04_it.html" title="">Serious Games</a> per la formazione e l'addestramento:
+                                il sistema EMSAVE per l'addestramento degli infermieri del 118 ed il game mobile Monster&amp;Gold per la motivazione
+                                all'esercizio fisico.
+                                <div>
+                                    <a href="aboutus/itpress46/focusContent.jpg" class="smalllink">[Vedi frammenti del servizio]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>28 Febbraio 2011</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Applicazioni per il fitness dipendenti dal contesto su telefonino.
+                                </span>Il nostro ultimo fitness game mobile utilizza sensori che rilevano la velocita' e la frequenza cardiaca dell'utente, adattando la
+                                dinamica di gioco per massimizzare i benefici cardiovascolari. Leggi tutti i dettagli nell'<a href="publications/2010-09.html" title="">articolo</a> pubblicato dalla rivista internazionale <a href="http://www.computer.org/pervasive" title="">IEEE Pervasive</a>
+                                e guarda una <a href="demos-videos/item19_it.html" title="">demo</a> in video.
+                                <div>
+                                    <a href="publications/2010-09.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2010</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>29 Novembre 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab rilascia una demo pubblica del software VEX per la progettazione di visite ed esibizioni virtuali.
+                                </span>Maggiori informazioni su <a href="http://hcilab.uniud.it/vex/" title="">questa pagina</a>, dove potrete anche scaricare il software.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>30 Settembre 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                HCI Lab presenta un nuovo software per la costruzione di esibizioni virtuali al
+                                Louvre di Parigi.
+                                </span>La presentazione si e' svolta nel contesto dell'undicesimo
+                                <a href="http://www.vast2010.org/" title="">VAST International Symposium on Virtual Reality, Archaeology and Cultural Heritage</a>, che ha selezionato il nostro contributo come full paper.
+                                <div>
+                                    <a href="publications/2010-08.html" class="smalllink">[Leggi il paper qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>10 Settembre 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il nostro laboratorio presenta due diversi articoli alla conferenza internazionale MOBILE HCI 2010.
+                                </span>Il processo di selezione della conferenza e' stato talmente rigoroso che soltanto il 17% degli short paper sottomessi e soltanto il 23% dei long paper sottomessi e' stato accettato. I nostri due articoli riguardano rispettivamente la <a href="publications/2010-06.html" title="">comunicazione fra soccorritori e pazienti sordi</a> e la <a href="publications/2010-07.html" title="">selezione da menu per utenti ciechi nei telefoni cellulari</a>. 
+                                <div>
+                                    <a href="http://mobilehci2010.di.fc.ul.pt/" class="smalllink">[Sito web di Mobile HCI 2010]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>28 Giugno 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il nostro laboratorio ha presentato due articoli a Smart Graphics 2010 in Canada.
+                                </span> Gli articoli riguardano rispettivamente un <a href="/publications/2010-04.html" title="">tool per progettare facilmente mostre e visite virtuali 3D</a> ed un <a href="/publications/2010-05.html" title="">linguaggio per la definizione e valutazione delle proprieta' visuali di telecamere virtuali in ambienti 3D</a>.
+                                <div>
+                                    <a href="http://www.smartgraphics.org/sg10/index.html" class="smalllink">[Sito web Smart Graphics 2010]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>10 Giugno 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">La Realta' Virtuale come strumento di persuasione.
+                                </span>Questa settimana, alla conferenza internazionale <a href="http://www.persuasive2010.org" title="">Persuasive 2010</a>, svoltasi a Copenhagen, Danimarca, abbiamo presentato un nostro articolo che mostra come la Realta' Virtuale possa essere uno strumento efficace per indurre emozioni (inclusa l'ansia) e cambiare le convinzioni delle persone verso tematiche che riguardano la sicurezza personale.
+                                Il processo di selezione della conferenza e' stato molto severo e degli 80 articoli sottomessi meno di un terzo e' stato ammesso alla presentazione.
+                                <div>
+                                    <a href="publications/2010-03.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>20 Aprile 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Progettare interfacce multimodali per dispositivi mobili.
+                                </span>Le future interfacce dei telefoni e di altri dispositivi mobili saranno sempre piu' multimodali.
+                                Leggi l'introduzione ed i suggerimenti di Luca Chittaro sul design di interfacce multimodali mobili
+                                nell'articolo su invito appena pubblicato dalla rivista <a href="http://www.springer.com/computer/hci/journal/12193" title="">Journal on Multimodal User Interfaces</a>
+                                della Springer.
+                                <div>
+                                    <a href="publications/2010-02.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>26 Marzo 2010</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">HCI Lab riceve un riconoscimento internazionale alla conferenza IEEE sui Serious Game.
+                                </span>Il nostro serious game per l'addestramento degli
+                                infermieri del 118 ha ricevuto il <a href="http://www.vsgames2010.org/index.php/Best-Paper-Awards" title="">riconoscimento onorario</a>
+                                destinato ai tre migliori articoli presentati alla conferenza <a href="http://www.vsgames2010.org/" title="">IEEE VS-GAMES 2010</a>.
+                                <div>
+                                    <a href="publications/2010-01.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2009</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>19 Novembre 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Disporre facilmente oggetti 3D in mondi virtuali.
+                                </span>Oggi, alla conferenza internazionale <a href="http://grouse.ime.cmc.osaka-u.ac.jp:8080/VRST2009/" title="">ACM VRST 2009</a>, il nostro laboratorio presenta un articolo sull'efficacia di combinare una vista in prima persona con
+                                una mappa nella disposizione di oggetti 3D in mondi virtuali.
+                                Il nostro lavoro e' uno dei 21 articoli lunghi accettati dalla
+                                conferenza su 61 ricevuti.
+                                <div>
+                                    <a href="publications/2009-08.html" class="smalllink">[Leggi l'articolo]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>15 Settembre 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il direttore del nostro laboratorio e' uno degli invited tutorialist di Mobile HCI 2009.
+                                </span>
+                                Luca Chittaro e' stato oggi invited tutorialist per la conferenza
+                                internazionale <a href="http://www.mobilehci09.org/" title="">Mobile HCI 2009</a>, svoltasi a Bonn. La lezione svolta si e' focalizzata su come progettare interfacce grafiche
+                                efficaci per dispositivi mobili e le slide sono state rese disponibili su Web.
+                                <div>
+                                    <a href="http://www.comp.lancs.ac.uk/~rukzio/mobilehci2009tutorials/Chittaro_InformationVisualizationandVisualInterfacesforMobileDevices.pdf" class="smalllink">[Scarica le slide del tutorial]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>27 Luglio 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il nostro laboratorio ha presentato due articoli alla conferenza
+                                internazionale UMAP 2009.
+                                </span>Il processo di selezione della conferenza e'
+                                stato severo e sono stati accettati solo 47 articoli di ricerca su 125
+                                sottomissioni. I nostri due articoli riguardano rispettivamente la
+                                <a href="publications/2009-04.html" title="">modellazione del profilo di persone disabili per supportare l'attivita' di soccorso del 118</a> ed il <a href="publications/2009-05.html" title="">filtraggio di informazioni relative a percorsi fitness</a>.
+                                <div>
+                                    <a href="http://umap09.fbk.eu" class="smalllink">[Sito web di UMAP 2009]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>23 Maggio 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Luca Chittaro e' keynote speaker alla IEEE HSI 2009.
+                                </span>Il direttore del nostro laboratorio ha tenuto oggi il keynote speech per
+                                la conferenza internazionale <a href="http://www3.unict.it/hsi09/" title="">IEEE Human-System Interaction</a>. Il tema trattato da Chittaro ha riguardato il ruolo della visualizzazione nell'interazione
+                                uomo-macchina mobile.
+                                <div>
+                                    <a href="http://www3.unict.it/hsi09/keynote_speakers.php?mm=8#KN_CHITTARO" class="smalllink">[Leggi l'abstract dell'intervento]
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>13 Maggio 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il direttore del nostro laboratorio apre evento internazionale sulle
+                                interfacce multimodali. </span>Luca Chittaro e' stato oggi keynote speaker per l'evento
+                                <a href="http://www.dcs.gla.ac.uk/~sjg/oi/" title="">Challenges of Engineering Multimodal Interaction</a>,
+                                svoltosi al <a href="http://www.fit.fraunhofer.de/index_en.html" title="">Fraunhofer Institute for Applied Information Technology</a>
+                                in Germania. La
+                                relazione invitata ha riguardato l'interazione multimodale nel contesto
+                                dei dispositivi mobili.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>29 Aprile 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Luca Chittaro e' relatore invitato per l'iniziativa ENEL &quot;Incontra gli
+                                Scienziati&quot;.
+                                </span>L'<a href="http://playenergy.enel.com/ita/incontri/05incontro.html" title="">evento</a> si e' svolto oggi a Livorno e la relazione ha riguardato tematiche di
+                                interazione uomo-macchina e di comunicazione mediata dal calcolatore.
+                                <a href="http://www.enel.com" title="">ENEL</a> e' il primo fornitore di energia in Italia
+                                ed il secondo in Europa.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>10 Aprile 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il nostro laboratorio a capo del progetto su servizi avanzati per il
+                                soccorso sanitario al disabile.
+                                </span>Oggi abbiamo reso disponibile un <a href="http://hcilab.uniud.it/soccorsodisabili/index.html" title="">sito web</a>
+                                che illustra obbiettivi, partner e risultati sinora
+                                ottenuti.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/soccorsodisabili/index.html" class="smalllink">[Visita il Sito Web del progetto]
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>11 Marzo 2009</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Due articoli lunghi, sui 21 accettati da IEEE VS-GAMES 2009, provengono dal
+                                nostro laboratorio.
+                                </span>La <a href="http://www.vs-games.org.uk/" title="">prima conferenza internazionale IEEE sui Serious Games</a> si svolgera' questo mese in Inghilterra ed i due lavori che presenteremo riguardano rispettivamente <a href="publications/2009-02.html" title="">un serious game per l'addestramento all'evacuazione da incendio</a> e <a href="publications/2009-03.html" title="">l'uso del task modeling nel design di serious game per servizi medici di emergenza</a>.
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2008</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>10 Settembre 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Luca Chittaro e' keynote speaker al World Computer Congress di IFIP.
+                                </span>Il
+                                direttore del nostro laboratorio
+                                e' uno dei <a href="http://www.wcc2008.org/site/keynotes/keynotes.htm" title="">keynote speakers</a>
+                                del <a href="http://www.wcc2008.org" title="">ventesimo World Computer Congress</a> organizzato da
+                                <a href="http://www.ifip.org" title="">IFIP</a>.
+                                Il congresso ha visto la partecipazione di 2000 persone da 70 nazioni.
+                                Il tema trattato da Chittaro e' stata l'interazione con
+                                interfacce grafiche su dispositivi mobili.
+                                <div>
+                                    <a href="publications/2008-10.html" class="smalllink">[Leggi l'abstract
+                                    dell'intervento]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>01 Settembre 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il nostro laboratorio presenta due diversi articoli alla conferenza internazionale MOBILE HCI 2008.</span>Il processo di selezione della conferenza e' stato molto severo e meno di un terzo dei 210 articoli sottomessi e' stato accettato. I nostri due articoli riguardano rispettivamente <a href="publications/2008-09.html" title="">la navigazione di siti web/mappe</a> e <a href="publications/2008-08.html" title="">le istruzioni di evacuazione edifici</a> su dispositivi mobili.
+                                <div>
+                                    <a href="http://mobilehci2008.telin.nl/" class="smalllink">[sito web di Mobile HCI 2008]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>04 Giugno 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Supporto all’evacuazione di edifici tramite mappe 3D location-aware.
+                                </span>La scorsa settimana, al <a href="http://www.mobile-response.org/" title="">simposio Mobile Response</a> a Bonn, in Germania, abbiamo presentato il nostro sistema mobile che assiste l’utente nell’evacuazione di edifici. Il sistema fornisce istruzioni di evacuzione all’utente attraverso rappresentazioni tridimensionali dell’edificio e determina la posizione dell’utente all’interno dell’edificio utilizzando la tecnologia RFID attiva.
+                                <div>
+                                    <a href="demos-videos/item14_it.html" class="smalllink">[Guarda il video]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>28 Marzo 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Navigazione di mappe e pagine web su dispositivi mobili.
+                                </span>Recentemente, abbiamo studiato alcune tecniche che supportano la navigazione di mappe e pagine web su dispositivi mobili. Leggete i risultati che abbiamo ottenuto <a href="publications/2008-03.html" title="">nell'articolo</a> appena apparso sulla rivista <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/622846/description" title="">International Journal of Human-Computer Studies</a>.
+                                <div>
+                                    <a href="publications/2008-03.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>03 Marzo 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Computer indossabili per il fitness all'aria aperta.
+                                </span>Il nostro
+                                laboratorio ha proposto un sistema indossabile adattativo rispetto all'utente ed al contesto per il fitness all'aria aperta.
+                                Mediante sensori di posizione e fisiologici, uniti ad un trainer virtuale 3D, il sistema fornisce all'utente
+                                suggerimenti ed esercizi personalizzati. Una descrizione dettagliata e'
+                                disponibile nell'articolo appena apparso sulla rivista <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/505627/description" title="">Artificial Intelligence in Medicine</a>, numero speciale sul Wearable Computing e l'Intelligenza Artificiale per applicazioni di Healthcare.
+                                <div>
+                                    <a href="publications/2008-04.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>04 Febbraio 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Analisi visuale ed interattiva di dati geografici su dispositivi mobili.
+                                </span>L'accesso a dati geografici e' spesso essenziale per supportare le attivita' degli utenti sul campo. Il nostro laboratorio ha sviluppato un'interfaccia interattiva basata sull'uso di &quot;dynamic queries&quot; che permette agli utenti di gestire dati geografici su dispositivi mobili. Leggete i dettagli <a href="publications/2008-02.html" title="">nell'articolo</a> appena apparso sulla rivista internazionale <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/622846/description" title="">Journal of Visual Languages and Computing</a>. 
+                                <div>
+                                    <a href="publications/2008-02.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>03 Gennaio 2008</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Analisi visiva della navigazione su dispositivi mobili.
+                                </span>Il nostro laboratorio ha sviluppato un sistema che evidenzia visivamente vari aspetti di come gli utenti navigano uno spazio informativo su dispositivi mobili. Una descrizione dettagliata del sistema e' disponibile <a href="http://www.computer.org/portal/cms_docs_cga/cga/homepage/2008/cg24.pdf" title="">nell'articolo</a> appena apparso su <a href="http://www.computer.org/portal/site/cga/index.jsp" title="">IEEE Computer Graphics and Applications</a> e scelto come January/February 2008 Highlight dalla rivista.
+                                <div>
+                                    <a href="publications/2008-01.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2007</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>01 Ottobre 2007</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Supporto alla navigazione e differenze fra utenti in ambienti virtuali 3D.
+                                </span>In un articolo appena apparso sulla rivista <a href="http://www.elsevier.com/wps/find/journaldescription.cws_home/622846/description" title="">International Journal of Human-Computer Studies</a>, abbiamo studiato alcuni nuovi ausili alla navigazione per ambienti
+                                virtuali 3D e
+                                gli effetti del livello di esperienza degli utenti con ambienti
+                                3D sull'efficacia di tali ausili.
+                                <div>
+                                    <a href="publications/2007-13.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>13 Agosto 2007</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Ambienti virtuali adattativi e 3D per l'apprendimento.
+                                </span>Il nostro laboratorio ha sviluppato un sistema, basato su un framework di adaptive hypermedia, in grado di generare un ambiente virtuale 3D che seleziona e personalizza i contenuti presentati agli utenti. Una descrizione dettagliata e' disponibile <a href="http://www.computer.org/portal/cms_docs_intelligent/intelligent/homepage/2007/X407/x4031.pdf" title="">nell'articolo</a> appena apparso sulla rivista <a href="http://www.computer.org/portal/site/intelligent/" title="">IEEE Intelligent Systems</a>, numero speciale sugli Intelligent Educational Systems.
+                                <div>
+                                    <a href="publications/2007-12.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>04 Luglio 2007</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Videogiochi che si adattano alla vostra frequenza cardiaca.
+                                </span>La scorsa settimana, al Simposio Smartgraphics a Kyoto, in Giappone,
+                                abbiamo presentato la nostra architettura di videogame che si adatta
+                                alla frequenza cardiaca dell'utente (<a href="demos-videos/item13_it.html" title="">guardate il video</a>). Il sistema ha generato parecchio interesse e la notizia e' stata
+                                discussa da numerosi
+                                siti Web noti, quali <a href="http://www.engadget.com/2007/06/25/video-game-follows-your-movements-adapts-to-your-heart-rate/" title="">Engadget</a>, <a href=" http://blog.wired.com/games/2007/06/game-adjusts-di.html" title="">Wired</a>, <a href="http://www.joystiq.com/2007/06/29/games-difficulty-controlled-by-heart-rate/" title="">Joystiq</a>, <a href="http://www.g4tv.com/thefeed/blog/post/676842/Experimental_Game_Keys_In_To_Heart_Rate.html#comments" title="">The Feed</a> e <a href="http://www.google.com/search?q=video+game+adapts+heart+rate" title="">molti altri</a>. 
+                                <div>
+                                    <a href="publications/2007-11.html" class="smalllink">[Leggi l'articolo qui]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>15 Aprile 2007</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Docenti dell'HCI Lab curano un numero speciale di rivista sul
+                                tema &quot;Tecnologie Web 3D per l'apprendimento,
+                                istruzione ed addestramento&quot;. </span>Luca Chittaro e Roberto Ranon sono i curatori invitati del <a href="http://www.sciencedirect.com/science/journal/03601315 " title="">numero speciale</a> della rivista internazionale Computers &amp; Education
+                                sui diversi aspetti dell'uso delle tecnologie Web 3D per creare
+                                applicazioni di apprendimento,
+                                istruzione ed addestramento.
+                                <div>
+                                    <a href="publications/2007-03.html" class="smalllink">[Leggi l'introduzione]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>12 Aprile 2007</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il nuovo Web: 3D, Adattativo, Mobile e Spaziale.
+                                </span>Leggete le ultime
+                                novita' su soluzioni e tecnologie per creare
+                                nuove applicazioni Web che includono funzionalita' 3D, adattative e
+                                basate su mappe mobili in due diversi
+                                capitoli invitati scritti da membri del nostro laboratorio per libri
+                                internazionali. Il primo parla di
+                                <a href="publications/2007-02.html" title="">siti Web 3D adattivi</a> mentre il secondo di <a href="publications/2007-01.html" title="">applicazioni basate su mappe per dispositivi mobili</a>.
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2006</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>19 Dicembre 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Analisi visiva dei movimenti di persone.
+                                </span>Il nostro laboratorio ha sviluppato un sistema che traccia, visualizza
+                                e fornisce intuizioni sui movimenti di utenti in spazi sia virtuali che
+                                reali. Una descrizione dettagliata e' disponibile nell'articolo appena
+                                apparso sulle <em>IEEE Transactions on
+                                Visualization and Computer Graphics</em>, numero speciale sulla <em>Visual Analytics</em>.
+                                <div>
+                                    <a href="publications/2006-05.html" class="smalllink">[Leggi l'articolo]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>26 Ottobre 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il Sole 24 Ore dedica un ampio servizio al nostro progetto MOPET.
+                                </span><a href="http://hcilab.uniud.it/projects/2006-01_it.html" title="">MOPET (Mobile Personal Trainer)</a> e' un'applicazione mobile innovativa
+                                che assiste e guida le persone nelle attivita' di fitness all'aperto,
+                                monitorandone i parametri fisiologici grazie ad appositi sensori wireless
+                                e dando delle lezioni di ginnastica mediante un personaggio 3D.
+                                <div>
+                                    <a href="aboutus/itpress39/evita.gif" class="smalllink">[Leggi l'articolo del Sole ]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>15 Settembre 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Due articoli lunghi, sui 20 accettati alla conferenza internazionale
+                                MOBILE HCI 2006, provengono dal nostro laboratorio.
+                                </span>Il processo di
+                                selezione della conferenza e' stato
+                                molto severo e solo il 24% degli articoli sottomessi e' stato accettato.
+                                Uno dei nostri due articoli riguarda le <a href="publications/2006-07.html" title="">applicazioni di mobile fitness</a>, l'altro la <a href="publications/2006-08.html" title="">visualizzazione di oggetti fuori schermo nelle mappe mobili</a>.
+                                <div>
+                                    <a href="http://mobilehci.soberit.hut.fi/" class="smalllink">[sito Web di Mobile HCI 2006]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>13 Giugno 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il direttore del nostro laboratorio in diretta su RAI 2.
+                                </span>Luca Chittaro e' stato invitato a presentare il nostro progetto
+                                di guide mobili nel popolare programma di RAI2 &quot;Piazza Grande&quot;,
+                                dove e' stato intervistato dal noto conduttore Giancarlo Magalli.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/aboutus_it.html" class="smalllink">[Guarda un estratto video]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>05 Giugno 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Guarda la trasmissione &quot;Visualization in a Mobile World&quot; su IEE TV.
+                                </span>La conferenza su invito tenuta da Luca Chittaro a Glasgow per
+                                IEE ICCSA 2006 puo' ora essere gratuitamente vista sulla televisione
+                                on-line IET TV. Vai alla <a href="http://www.iet.tv/search/index.html?spres=4028" title="">pagina della IET TV</a> e fai click su &quot;play broadcast&quot;.
+                                <div>
+                                    <a href="http://www.iet.tv/search/index.html?spres=4028%0A" class="smalllink">[Vai alla pagina della IET TV]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>06 Maggio 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il terremoto virtuale! </span>Abbiamo utilizzato le più avanzate tecniche di simulazione e Realta' Virtuale per riprodurre gli effetti del terremoto che ha colpito il Friuli il 6 Maggio del 1976. Il progetto ha anche prodotto un cortometraggio scaricabile dal Web.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/terremoto" class="smalllink">[Visita il sito sul Terremoto Virtuale]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>02 Maggio 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">HCI Lab rilascia nuovi software 3D gratuiti.
+                                </span>H-Animator e' un tool visuale per modellare animazioni di umanoidi
+                                conformi agli standard X3D e H-Anim.
+                                MobiX3D Player e' un software per visualizzare su PDA contenuti X3D interattivi. <a href="http://hcilab.uniud.it/h-animator" title="">[Vai sul sito di H-Animator]</a> <a href="http://hcilab.uniud.it/MobiX3D" title="">[Vai sul sito di MobiX3D]</a>
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>11 Marzo 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">La visualizzazione delle informazioni su dispositivi mobili.
+                                </span><a href="http://www.dimi.uniud.it/chittaro" title="">Luca Chittaro</a> scrive il primo articolo
+                                introduttivo a questo nuovo entusiasmante tema
+                                e viene scelto come articolo di copertina per il
+                                numero di Marzo di <a href="http://www.computer.org/portal/site/computer/index.jsp?pageID=computer_level1_article_list&amp;TheCat=1005" title="">IEEE Computer</a>, il &quot;flagship magazine&quot; della
+                                <a href="http://www.computer.org/" title="">IEEE Computer Society</a>.
+                                <div>
+                                    <a href="publications/2006-03.html" class="smalllink">[Leggi l'articolo qui] </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>02 Marzo 2006</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">HCI Lab lancia la nuova versione della sua <a href="http://hcilab.uniud.it/t4t" title="">guida mobile</a> a <a href="http://bit.expocts.it/manifestazione/manifestazione.aspx" title="">BIT 2006</a>.
+                                </span>La Borsa Internazionale del Turismo (BIT) e' la piu' grande esposizione al mondo del prodotto turistico italiano. Per l'occasione, che attrae ogni anno oltre 150'000 visitatori da circa 100 nazioni, abbiamo presentato la nuova versione della nostra guida turistica mobile, che ora e' disponibile sia per telefono cellulare che per palmare.
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2005</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>02 Dicembre 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Il direttore del nostro laboratorio su <a href="http://www.businessweek.com/innovate/content/dec2005/id20051202_581305.htm" title="">BusinessWeek</a>.
+                                </span>BusinessWeek e' la rivista di business con la maggior diffusione mondiale.
+                                Luca Chittaro e' stato uno degli esperti intervistati per un <a href="http://www.businessweek.com/innovate/content/dec2005/id20051202_581305.htm" title="">articolo</a> sulla user experience nel commercio elettronico.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>19 Ottobre 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">L'HCI Lab partecipa a <a href="http://www.smau.it" title="">SMAU</a> 2005.
+                                </span>Abbiamo presentato alcuni dei nostri progetti alla 42esima edizione della Fiera
+                                Internazionale di ICT &amp; Consumer Electronics che quest'anno ha attirato 170'000 visitatori. Il nostro <a href="demos-videos/item8_it.html" title="">simulatore immersivo</a> gratuito del velivolo usato dalle Frecce Tricolori e la nostra <a href="http://hcilab.uniud.it/t4t" title="">guida mobile</a> hanno ricevuto grande attenzione e sono stati inseriti nei <a href="aboutus_it.html" title="">servizi di TV e giornali</a>.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>05 Settembre 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Successo del nostro laboratorio ad <a href="http://www.interact2005.org" title="">INTERACT 2005</a> con 3 articoli lunghi accettati.
+                                </span>La conferenza e' uno degli eventi HCI piu' importanti e selettivi al mondo: quest'anno,
+                                solo 70 articoli lunghi sono stati accettati su 264 sottomessi. Presenteremo i nostri
+                                lavori piu' recenti su <a href="publications/2005-04.html" title="">mobile input</a>,
+                                <a href="publications/2005-07.html" title="">mobile guides</a> e <a href="publications/2005-03.html" title="">visualizzazione della navigazione</a>.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>26 Luglio 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Impara a pilotare il jet delle Frecce Tricolori con il nostro software gratuito. </span>In una conferenza stampa congiunta con le Frecce Tricolori, oggi HCI Lab ha reso pubblico un simulatore del velivolo MB-339 PAN, gratuitamente installabile su qualsiasi computer recente. Guarda il <a href="http://hcilab.uniud.it/pan/screenshots_it.html" title="">video</a> e alcune <a href="http://hcilab.uniud.it/pan/screenshots_it.html" title="">schermate</a>.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/pan/index_it.html" class="smalllink">[Visita il sito Web MB-339 PAN]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>06 Giugno 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Studenti dell'HCI Lab vincono le finali italiane dell'<a href="http://imagine.thespoke.net/about/" title="">Imagine Cup 2005</a>.
+                                </span>Rappresenteranno
+                                l'Italia nella categoria Software Design alle finali mondiali
+                                in Giappone, quest'estate. L' <a href="http://imagine.thespoke.net/about/" title="">Imagine Cup</a> e' una competizione
+                                tecnologica organizzata da Microsoft per consentire a giovani
+                                sviluppatori di presentare le loro innovazioni. I nostri
+                                studenti hanno vinto con un progetto denominato TellMe
+                                che integra tecnologie mobili e 3D per assistere utenti
+                                disabili nel comunicare.
+                                <div>
+                                    <a href="aboutus/itpress20/scansione.jpg" class="smalllink">[maggiori dettagli]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>04 Aprile 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">La BBC menziona uno dei nostri progetti.
+                                </span>In un <a href="http://news.bbc.co.uk/1/hi/wales/north_west/4398683.stm" title="">servizio sul Web3D</a>, BBC News menziona &quot;un progetto dell'Universita' di Udine in Italia con cui i visitatori di una citta' possono usare grafica 3D dei siti turistici sui propri dispositivi mobili&quot;.
+                                <div>
+                                    <a href="publications/2005-02.html" class="smalllink">[maggiori dettagli tecnici sul progetto] </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>04 Marzo 2005</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Due articoli, sui 18 accettati al Simposio ACM Web3D 2005, provengono dal nostro laboratorio. </span>Uno riguarda <a href="publications/2005-01.html" title="">il controllo di umanoidi virtuali</a>, l'altro riguarda <a href="publications/2005-02.html" title="">sistemi di visualizzazione location-aware 3D su dispositivi mobili</a>.
+                                <div>
+                                    <a href="http://www.hpv.informatics.bangor.ac.uk/s2005/" class="smalllink">[sito web del Simposio Web3D 2005]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2004</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>14 Ottobre 2004</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Un'idea imprenditoriale dell'HCI Lab selezionata per le finali del <a href="http://www.premioinnovazione.it/menu.htm" title="">Premio Nazionale Innovazione</a>.
+                                </span>Solo 3 (su 95) progetti sono stati scelti nella selezione regionale. Il nostro progetto si chiama Mobile 3D ed include un business plan dettagliato per un'azienda spin-off chiamata <a href="http://hcilab.uniud.it/t4t" title="">Tech4Tourism</a>, che si occuperebbe di sfruttamento innovativo di grafica 3D e dispositivi mobili per fornire servizi ai turisti.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>07 Agosto 2004</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                LET-Web3D Workshop si terrà a Udine.
+                                </span>
+                                L'HCI Lab annuncia la prima edizione del Workshop Web3D in Learning, Education and Training, che si terrà a Udine il 30 Settembre- 01 Ottobre 2004. Per maggiori informazioni visitate il sito <a href="http://hcilab.uniud.it/let-web3d/">LET-Web3D</a>.
+                                <div></div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>11 Maggio 2004</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Umanoidi...che personalità!
+                                </span>
+                                Abbiamo lavorato ad un sistema per conferire caratteristiche di personalità agli umanoidi virtuali in modo da influenzare le loro scelte comportamentali, come accade per gli esseri umani. Un articolo su questo lavoro è stato accettato fra i migliori articoli (22% di articoli accettati) della Conferenza Computer Animation &amp; Social Agents (CASA) 2004. 
+                                <div>
+                                    <a href="publications/2004-05.html" class="smalllink">[ulteriori dettagli su questo articolo]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>02 Maggio 2004</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Due articoli, sui 22 accettati alla Conferenza Advanced Visual Interfaces (AVI) 2004, provengono dal nostro laboratorio.
+                                </span>
+                                Tali articoli riguardano diversi aspetti dell'interazione con mondi virtuali 3D: uno riguarda <a href="publications/2004-09.html" title="">lo studio del comportamento degli utenti</a>, l'altro riguarda <a href="publications/2004-10.html" title="">aiuti alla navigazione</a>.
+                                <div>
+                                    <a href="http://www.di.uniba.it/~avi2004/" class="smalllink">[sito web di AVI2004]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>07 Gennaio 2004</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                L'HCI Lab aiuta il personale medico nell'analisi dei dati medici.
+                                </span>Negli ultimi tre anni abbiamo lavorato a stretto contatto con il personale medico per sviluppare un sistema visuale per il data mining su vasti database temporali per un centro di emodialisi. Alcuni degli ultimi miglioramenti sono descritti nella special issue su Visual Data Mining of the Journal of Visual Languages and Computing.
+                                <div>
+                                    <a href="projects/2001-02.html" class="smalllink">[maggiori informazioni su questo progetto]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2003</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>17 Settembre 2003</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Mobile HCI 2003 (organizzata dal nostro laboratorio) si é conclusa con successo.
+                                </span>Con 122 articoli sottomessi da 26 paesi diversi, il 33% di selezione per i full papers e il 49% per gli short, la quinta edizione della conferenza ha mostrato un programma tecnico di alta qualità.
+                                <div>
+                                    <a href="http://hcilab.uniud.it/mobilehci/index.html" class="smalllink">[maggiori informazioni sul sito web Mobile HCI 2003] </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>26 Febbraio 2003</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Vola con il team acrobatico italiano con il nostro ultimo prodotto Web3D.</span>In una conferenza stampa unificata con le Frecce Tricolori, l'HCI Lab lancia oggi il sito che ti mette a bordo dei jet mentre compiono straordinarie manovre acrobatiche.
+                                <div>
+                                    <a href="http://frecce3d.uniud.it/" class="smalllink">[sito web delle frecce3d] </a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>27 Gennaio 2003</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Due, sui 18 articoli accettati al Simposio ACM Web3D 2003, provengono dal nostro laboratorio.
+                                </span>Un'articolo riguarda <a href="publications/2003-04.html">la simulazione di capi di abbigliamento</a>, l'altro riguarda <a href="publications/2003-05.html">umanoidi intelligenti</a>.
+                                <div>
+                                    <a href="http://www.web3d.org/s2003/" class="smalllink">[sito web di Web3D 2003 symposium]</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expandableContainer">
+                        <div class="expandableContainerTitle link">
+                            <h3>2002</h3>
+                        </div>
+                        <div class="expandableContainerBody">
+                            <div class="expandableContentHeader">
+                                <h4>23 Ottobre 2002</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                L'HCI Lab presenta un prodotto a <a href="http://www.smau.it/smau2002/english/docs/">SMAU</a>.
+                                </span>Il prodotto é un sistema di Computer Supported Cooperative Work per esperimenti di cristallografia a raggi x, sviluppato in collaborazione con il <a href="http://www.elettra.trieste.it/">Laboratorio Elettra Synchrotron Light</a> di Trieste. 
+                                <div>
+                                    <a href="projects/2001-01.html" class="smalllink">[maggiori informazioni]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>16 Settembre 2002</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">Mobile HCI 2003 si terrá a Udine.</span>
+                                L'HCI Lab annuncia la quinta edizione della conferenza Mobile HCI che si terrá a Udine in settembre 2003. Per maggiori informazioni, visitate il sito di <a href="http://hcilab.uniud.it/mobilehci/">Mobile HCI 2003</a>. 
+                                <div>
+                                    <a href="http://hcilab.uniud.it/mobilehci" class="smalllink">[maggiori informazioni]</a>
+                                </div>
+                            </div>
+                            <div class="expandableContentHeader">
+                                <h4>13 Settembre 2002</h4>
+                            </div>
+                            <div class="expandableContentBody">
+                                <span class="expandableContentTitle">
+                                Il sito web rinnovato dell'HCI Lab é on line.
+                                </span>
+                                Buona navigazione.
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div id="boxcontatti">
+                        <div class="contatti">CONTATTI</div>
+                        <div class="contatti2">Università degli studi Udine</div>
+                        <div class="contatti2">via delle Scienze, 206 Udine</div>
+                        <div class="contatti2">+39 0432 558400</div>
+                        <div class="contatti2"><a href="mailto:info@dimi.uniud.it">info@dimi.uniud.it</a></div>
+                    </div>
+                    <div id="w3c">
+                        <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+                        <a href="http://jigsaw.w3.org/css-validator/"><img src="http://www.w3.org/Icons/valid-css" alt="Valid CSS" height="31" width="88" /></a>
+                    </div>
+                    <div class="footBottom">
+                        <p id="update">Ultimo aggiornamento: 01 Luglio 2012</p>
+                        <p id="copyright">Copyright &#169; 2012 HCI lab Design by Valentino Delussu, Alessandro Vogrig e Giorgio Aresu. <a href="notelegali.html">Note Legali</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
